@@ -1,0 +1,133 @@
+.about{
+    width: 85%;
+    margin:  2rem auto;
+}
+
+.one{
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.h1{
+    font-size: var(--h2);
+    text-align: center;
+}
+
+.para1{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.pic1{
+    width: 20%;
+    /* height: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p1{
+    width: 80%;
+    padding-top: 10px;
+    font-size: var(--p);
+    text-align: justify;
+}
+
+.h2{
+    /* margin-left: 200px; */
+    font-size: var(--h2);
+    text-align: center;
+}
+
+.para2{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.pic2{
+    width: 20%;
+    /* height: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p2{
+    width: 80%;
+    padding-top: 10px;
+    font-size: var(--p);
+    text-align: justify;
+}
+
+.h3{
+    font-size: var(--h2);
+    padding-top: 10px;
+    text-align: center;
+}
+
+.para3{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.pic3{
+    width: 20%;
+    /* height: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p3{
+    width: 80%;
+    padding-top: 10px;
+    font-size: var(--p);
+    text-align: justify;
+
+}
+
+@media (max-width:1150px) {
+    .about{
+        width: 95%;
+    }
+}
+
+@media (max-width:1000px) {
+    .para1{
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+    .para1>div{
+        width: 100%;
+    }
+    .para2{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .para2>div{
+        width: 100%;
+    }
+    .para3{
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+    .para3>div{
+        width: 100%;
+    }
+}

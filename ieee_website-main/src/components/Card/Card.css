@@ -1,0 +1,98 @@
+.card {
+  width: 330px;
+  height: 400px;
+  background-color: var(--color1);
+  /* border-radius: 30px; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  /* position: relative; */
+}
+
+.card-image img {
+  width: 250px; 
+  height: 250px;
+  border-radius: 50%;
+  margin: 15px auto;
+  display: block;
+  object-fit: cover;
+}
+
+.card-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hover-box {
+  width: 261px;
+  height: 63px; 
+  background-color: var(--white);
+  border-radius: 40px;
+  box-shadow: inset 3px 4px 8px rgba(0.2, 0.2, 0.2, 0.2);
+  position: relative;
+  overflow: hidden;
+  margin-top:15px;
+}
+
+
+.text-box {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+}
+
+.text-box .name {
+  font-size: var(--p); 
+  margin: 0;
+  color: var(--black);
+  /* font-weight: bold; */
+  font-weight: 500;
+}
+
+.text-box .role {
+  font-size: var(--small);
+  color: var(--black);
+}
+
+.icons-box {
+  position: absolute;
+  width: 100%;
+  bottom: -50%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.icons-box a {
+  color: var(--black);
+  font-size: var(--p);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icons-box a:hover {
+  color: var(--color3);
+  transform: scale(1.2);
+}
+
+.card:hover .text-box {
+  top: -50%;
+  opacity: 0;
+}
+
+.card:hover .icons-box {
+  transform: translate(-50%, 0%);
+  bottom: 25%;
+  opacity: 1;
+}

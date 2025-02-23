@@ -1,0 +1,29 @@
+.event{
+    justify-items:center;
+    text-align:center;
+}
+
+.heada{
+    font-size:var(--h1);
+}
+
+.headb{
+    font-size:var(--h3);
+}
+
+.headc{
+    font-size:var(--p);
+}
+
+.img{
+    align-items:center;
+    padding-top:20px;
+    justify-content:center;
+    margin:1rem 0;
+}
+
+.para1{
+    font-size:var(--p);
+    padding-top: 20px;
+    text-align: justify;
+}

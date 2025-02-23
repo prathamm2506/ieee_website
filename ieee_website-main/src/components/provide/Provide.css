@@ -1,0 +1,23 @@
+.provide {
+  max-width: 95%;
+  margin: auto;
+  padding: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.provideTitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  margin-bottom: 16px;
+  margin-top: 12px;
+}
+
+.provideContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}

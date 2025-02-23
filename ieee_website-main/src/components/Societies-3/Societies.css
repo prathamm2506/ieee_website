@@ -1,0 +1,24 @@
+.Society{
+  margin:100px auto;
+  background-color: var(--blue);
+}
+.container{
+  display: flex;
+  gap:100px;
+}
+.left-content{
+  padding: 50px 0 50px 150px;
+}
+.button55{
+  background-color: var(--green);
+  padding:10px 20px;
+  /* border-radius: 10px; */
+  color:rgb(234, 234, 234);
+} 
+.button55:hover{
+  color:white;
+  background-color:rgb(61, 61, 208);
+}
+.right-content{
+  margin:50px auto;
+}

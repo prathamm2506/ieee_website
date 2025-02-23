@@ -1,0 +1,104 @@
+.header {
+    text-align: center; 
+    margin-bottom: 30px; 
+}
+
+.Membership {
+    font-size: 40px;  
+    font-weight: 700; 
+    color: #000;
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.tier-card {
+    width: 500px;
+    height: 557px;
+    background-color: var(--white);
+    /* border-radius: 25px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.title {
+    font-size: var(--h3);
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: var(--p);
+    margin-bottom: 20px;
+}
+
+.fees {
+    font-size: var(--p);
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.divider {
+    margin: 20px 0;
+    border: none;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    opacity: 0.5;
+}
+
+.features-title {
+    font-size: var(--p);
+    margin-bottom: 15px;
+    opacity: 0.5;
+    text-align: center;
+}
+
+.features {
+    font-size: var(--p);
+    opacity: 0.6;
+    list-style-type: disc; 
+    padding-left: 20px; 
+}
+
+.features li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+    .card-container {
+        flex-direction: column;
+    }
+}
+
+.card1{
+    background-color: var(--color1) ;
+}
+.card2{
+    background-color: var(--color2);
+}
+.feesInt{
+    font-size: var(--h3);
+}
+
+@media (max-width:530px) {
+    .tier-card{
+        width: 100%;
+        height: 100%;
+    }
+}
