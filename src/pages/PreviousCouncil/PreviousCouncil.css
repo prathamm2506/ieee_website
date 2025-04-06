@@ -1,0 +1,122 @@
+.council-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    padding-top: 8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .council-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .council-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+  }
+  
+  .council-section {
+    margin-bottom: 3rem;
+  }
+  
+  .section-header {
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    display: inline-block;
+    padding: 0 1rem;
+    background: white;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .header-decoration {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #3498db, transparent);
+    z-index: 0;
+  }
+  
+  .members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .member-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #3498db;
+  }
+  
+  .member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .member-info {
+    text-align: center;
+  }
+  
+  .member-name {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  
+  .member-post {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+  }
+  
+  /* Senior Council Specific Styles */
+  .senior-council .member-card {
+    border-left-color: #e74c3c;
+  }
+  
+  /* Junior Council Specific Styles */
+  .junior-council .member-card {
+    border-left-color: #2ecc71;
+  }
+  
+  @media (max-width: 768px) {
+    .members-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .council-header h1 {
+      font-size: 2rem;
+    }
+    
+    .section-header h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .members-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .council-page {
+      padding: 1rem;
+    }
+  }

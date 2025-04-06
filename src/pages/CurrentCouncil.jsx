@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "../components/Card/Card";
-import img1 from "../assets/test_img.jpg";
 import Udayan from "../assets/SECouncil/Udayan.JPG";
 import Unnati from "../assets/SECouncil/Unnati_D9A.JPG";
 import Vaidehi from "../assets/SECouncil/Vaidehi.jpg";
@@ -24,7 +23,6 @@ import Shantanu from "../assets/SECouncil/Shantanu_.jpg";
 import shravan from "../assets/SECouncil/shravan.JPG";
 import sonali from "../assets/SECouncil/sonali.JPG";
 import Sudarsana_Krishnan from "../assets/SECouncil/Sudarsana_Krishnan.jpg";
-import akshit from "../assets/TEs/akshit.png";
 import Anshi from "../assets/TEs/Anshi.png";
 import Arnav from "../assets/TEs/Arnav.jpg";
 import ayush from "../assets/TEs/ayush.jpg";
@@ -51,6 +49,8 @@ import aditri from "../assets/BEs/aditri.png";
 import aditiTE from "../assets/TEs/aditiTE.png"
 import greshaMam from "../assets/faculty/Gresha ma'am.png"
 import ashwiniMam from "../assets/faculty/Ashwini ma'am.png"
+import Akshit from "../assets/TEs/Akshit.jpg"
+import Prasad from "../assets/BEs/Prasad.jpg"
 
 const CurrentCouncil = () => {
   return (
@@ -113,7 +113,7 @@ const CurrentCouncil = () => {
             <Card
               name="Prasad Gourshettiwar"
               role="Senior Treasurer"
-              image={img1}
+              image={Prasad}
               linkedin="https://www.linkedin.com/in/prasad-gourshettiwar-4aa716227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               email="2021.prasad.gourshettiwar@ves.ac.in"
             />
@@ -203,7 +203,7 @@ const CurrentCouncil = () => {
             <Card
               name="Akshit Ramrane"
               role="Jr. Graphics Head"
-              image={akshit}
+              image={Akshit}
               linkedin="https://www.linkedin.com/in/akshit-ramrane-b1980825b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               // github="https://github.com/Akshit-Ramrane"
               email="2022.akshit.ramrane@ves.ac.in"

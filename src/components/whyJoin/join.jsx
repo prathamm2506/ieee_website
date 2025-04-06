@@ -77,7 +77,7 @@ const Join = () => {
             <p className="event-title">Publishing Discounts: </p>
             <p className="event-description">
               {" "}
-              Save on publishing in IEEE journals.
+              Save on publishing in IEEE journals with International Membership
             </p>
           </div>
         </div>

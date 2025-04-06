@@ -8,6 +8,7 @@ import img4 from '../../assets/GroupPhoto.jpg'
 import img5 from '../../assets/ml2.jpg';
 import img6 from '../../assets/uiux.jpg'
 import img7 from '../../assets/council.png';
+import img8 from '../../assets/photshootCouncil.jpg'
 
 const Header = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -23,6 +24,7 @@ const Header = () => {
     { img: img5, title: 'MAGIC SLIDER', type: 'PLANT', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...' },
     { img: img6, title: 'MAGIC SLIDER', type: 'PLANT', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...' },
     { img: img7, title: 'MAGIC SLIDER', type: 'PLANT', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...' },
+    { img: img8, title: 'MAGIC SLIDER', type: 'PLANT', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...' },
   ];
 
   const moveSlider = (direction) => {

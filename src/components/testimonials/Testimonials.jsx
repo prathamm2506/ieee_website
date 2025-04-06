@@ -1,30 +1,33 @@
 import React from "react";
-import img1 from '../../assets/photo.jpeg'
+import juhi from "../../assets/juhi.jpeg"
+import mansi from "../../assets/mansi.jpeg"
+import tamanna from "../../assets/tamanna.jpeg"
+import madhumita from "../../assets/madhumita.jpeg"
 
 const Testimonials = () => {
   const testimonials = [
     {
       name: "Juhi Chhatlani",
       branch: "CMPN (2019 - 2023)",
-      image: img1,
+      image: juhi,
       text: "Being a member of IEEE Vesit was amazing. I have gained experience with the technical workshop conducted by the council. International membership of IEEE has helped me in publishing my research paper."
     },
     {
       name: "Mansi Kasar",
       branch: "EXTC (2018 - 2022)",
-      image: img1,
+      image: mansi,
       text: "IEEE has no doubt been an important factor in my growth. Since all the workshops conducted had given me insights and hands-on experience into various technology that help me to learn new things."
     },
     {
-      name: "Vansh Pahuja",
-      branch: "CMPN (2020 - 2024)",
-      image: img1,
-      text: "UI/UX and App development workshop that was conducted by IEEE has helped me to know more about these fields. Also, all the council members helped me if any doubt arises during workshops."
+      name: "Tamanna Rupani",
+      branch: "CMPN (2013 - 2017)",
+      image: tamanna,
+      text: "Being a part of IEEE VESIT was a transformative journey. From a junior operations officer to Chairperson (2016-17), I gained invaluable leadership experience, teamwork skills, and industry exposure. The opportunities and challenges shaped my professional growth, and the lessons I learned continue to influence my career today."
     },
     {
       name: "Madhumita Menon",
       branch: "EXTC (2018 - 2022)",
-      image: img1,
+      image: madhumita,
       text: "I have been a part of the IEEE-VESIT family for 3 years and I am not exaggerating one bit when I say that choosing to get into this council was the best decision at the time."
     }
   ];

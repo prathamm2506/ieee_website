@@ -16,6 +16,7 @@ import CI from './pages/CI/CI';
 import Darkb from './components/Darkb/Darkb';
 import Societies3 from './components/Societies-3/Societies';
 import Calendar from './components/Calendar/Calendar.jsx';
+import MyLoftGuide from './pages/MyLoft/MyLoftGuide.jsx'
 
 // Workshops
 import VesitTank from "./pages/workshops/VesitTank";
@@ -31,6 +32,7 @@ import WealthWars from './pages/workshops/WealthWars.jsx';
 import Melange from './pages/workshops/Sympo.jsx';
 import UIUXCompetition from './pages/workshops/UIUX_Comp.jsx';
 import FinancialLiteracy from './pages/workshops/Finance.jsx';
+import PreviousCouncil from './pages/PreviousCouncil/PreviousCouncil.jsx'
 
 function App() {
   return (
@@ -47,7 +49,9 @@ function App() {
         <Route path="/join_ieee" element={<JoinPage />} />
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/societies/wie" element={<WIE />} />
-        <Route path="/societies/ci" element={<CI />} />
+        {/* <Route path="/societies/ci" element={<CI />} /> */}
+        <Route path="/myloft" element={<MyLoftGuide />} />
+        <Route path="/previousCouncil" element={<PreviousCouncil />} />
 
         {/* Workshop Routes */}
         <Route path="/vesit_tank" element={<VesitTank />} />

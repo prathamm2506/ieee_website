@@ -1,0 +1,247 @@
+.my-loft-guide {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  .guide-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .guide-header h1 {
+    color: #0066cc;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .note-box {
+    background-color: #f8f9fa;
+    border-left: 4px solid #0066cc;
+    padding: 15px;
+    margin: 20px 0;
+  }
+  
+  .note-box h3 {
+    margin-top: 0;
+    color: #0066cc;
+  }
+  
+  .access-section {
+    margin: 40px 0;
+  }
+  
+  .platform-tabs {
+    display: flex;
+    margin-bottom: -1px;
+  }
+  
+  .platform-tabs, .process-tabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .tab, .process-tab {
+    padding: 10px 20px;
+    background-color: #e9ecef;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 5px 5px 0 0;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .tab.active, .process-tab.active {
+    background-color: #0066cc;
+    color: white;
+  }
+  
+  .tab-content {
+    border: 1px solid #dee2e6;
+    border-radius: 0 5px 5px 5px;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .steps-container {
+    margin: 20px 0;
+  }
+  
+  .step-with-image {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+  }
+  
+  .step-with-image:last-child {
+    border-bottom: none;
+  }
+  
+  .step h4 {
+    color: #0066cc;
+    margin-top: 0;
+  }
+  
+  .screenshot {
+    margin: 15px 0;
+    text-align: center;
+  }
+  
+  .screenshot img {
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .image-caption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+  }
+  
+  .placeholder-image {
+    background-color: #f5f5f5;
+    border: 1px dashed #ccc;
+    padding: 40px;
+    text-align: center;
+    color: #666;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .resources-section {
+    margin: 40px 0;
+  }
+  
+  .institute-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .institute-list li {
+    padding: 8px 0;
+    padding-left: 30px;
+    position: relative;
+  }
+  
+  .institute-list li::before {
+    content: "•";
+    color: #0066cc;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0052a3;
+  }
+  
+  .guide-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+
+.vpn-explanation {
+    background-color: #f0f7ff;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+    border-left: 4px solid #0066cc;
+  }
+  
+  .vpn-explanation h4 {
+    margin-top: 0;
+    color: #0066cc;
+  }
+  
+  .vpn-explanation ul {
+    margin-bottom: 0;
+  }
+
+  .access-ieee-toggle {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .access-ieee-toggle .btn {
+    background-color: #28a745;
+  }
+  
+  .access-ieee-toggle .btn:hover {
+    background-color: #218838;
+  }
+  
+  .ieee-access-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border-left: 4px solid #0066cc;
+  }
+  
+  .section-intro {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .note {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  
+  /* Mobile-specific adjustments */
+  .mobile-ieee-access .step {
+    margin-bottom: 30px;
+  }
+  
+  /* Desktop-specific adjustments */
+  .desktop-ieee-access .step {
+    margin-bottom: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .platform-tabs, .process-tabs {
+      flex-direction: column;
+    }
+    
+    .tab, .process-tab {
+      border-radius: 0;
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+    
+    .tab.active, .process-tab.active {
+      border-radius: 5px;
+    }
+    
+    .screenshot img {
+      max-width: 100%;
+    }
+  }

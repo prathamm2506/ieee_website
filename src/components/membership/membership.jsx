@@ -21,10 +21,10 @@
             {/* Header */}
             <div className="flex flex-col"> {/* Wrapped header content */}
                 <h2 className="text-xl font-bold text-center">
-                IEEE Membership 
+                IEEE VESIT 
                 </h2>
                 <p className="text-center text-lg font-bold">
-                    STARTER
+                    Student Section Membership
                 </p>
                 <p className="text-gray-600 text-center text-sm mt-1">
                 Unlock exclusive benefits as an IEEE member. Be a part of IEEE-VESIT
@@ -85,13 +85,13 @@
                     <span className="text-green-600 text-xl mr-2">✅</span> Free access to events & workshops
                 </li>
                 <li className="flex items-center p-2 rounded-lg" style={{backgroundColor: "var(--color1)"}}>
-                    <span className="text-green-600 text-xl mr-2">✅</span> Publishing discounts
-                </li>
-                <li className="flex items-center p-2 rounded-lg" style={{backgroundColor: "var(--color1)"}}>
                     <span className="text-green-600 text-xl mr-2">✅</span> Certifications & Courses
                 </li>
                 <li className="flex items-center p-2 rounded-lg" style={{backgroundColor: "var(--color1)"}}>
                     <span className="text-green-600 text-xl mr-2">✅</span> Exclusive networking opportunities
+                </li>
+                <li className="flex items-center p-2 rounded-lg" style={{backgroundColor: "var(--color1)"}}>
+                    <span className="text-green-600 text-xl mr-2">✅</span> Skill Development
                 </li>
                 </ul>
             </div>
@@ -102,10 +102,10 @@
             {/* Header */}
             <div className="flex flex-col"> {/* Wrapped header content */}
                 <h2 className="text-xl font-bold text-center">
-                IEEE Membership 
+                IEEE 
                 </h2>
                 <p className="text-center text-lg font-bold">
-                    INTERNATIONAL
+                    International Membership
                 </p>
                 <p className="text-gray-600 text-center text-sm mt-1">
                 This is upgraded version of IEEE membership with additional features 
@@ -116,7 +116,7 @@
             <div className="mt-4 space-y-2">
                 <div className="flex justify-between p-3 rounded-lg" style={{backgroundColor: "var(--color2"}}>
                 <span className="font-semibold">International Membership</span>
-                <span className="font-bold">$14 + Taxes</span>
+                <span className="font-bold">$7 + Taxes</span>
                 </div>
             </div>
 
@@ -130,7 +130,7 @@
                 </h3>
                 <ul className="mt-2 space-y-2">
                 <li className="flex items-center p-2 rounded-lg" style={{backgroundColor: "var(--color1)"}}>
-                    <span className="text-green-600 text-xl mr-2">✅</span> Perks offered by starter membership
+                    <span className="text-green-600 text-xl mr-2">✅</span> Publishing discounts
                 </li>
                 <li className="flex items-center p-2 rounded-lg" style={{backgroundColor: "var(--color1)"}}>
                     <span className="text-green-600 text-xl mr-2">✅</span> Access to Premium IEEE Resources and Publications
