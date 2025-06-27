@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useRef } from "react";
+import emailjs from "emailjs-com";
 import { FaChevronDown, FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 import greshaMam from "../../assets/faculty/Gresha ma'am.png"
 import ashwiniMam from "../../assets/faculty/Ashwini ma'am.png"
