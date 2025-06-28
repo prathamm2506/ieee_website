@@ -1,11 +1,13 @@
 import { useState } from "react";
+import { useRef } from "react";
+import emailjs from "emailjs-com";
 import { FaChevronDown, FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 import greshaMam from "../../assets/faculty/Gresha ma'am.png"
-import ashwiniMam from "../../assets/faculty/Ashwini ma'am.png"
-import anoushka from "../../assets/BEs/anoushka.png"
-import gaurang from "../../assets/BEs/gaurang.png"
-import Ishan from "../../assets/TEs/Ishan.jpg";
-import veydant from "../../assets/TEs/veydant.jpg";
+import ashwiniMam from "../../assets/faculty/Ashwini ma'am.png";
+import rakshit from "../../assets/rakshit.png"
+import ayush from "../../assets/ayush.png"
+import shreshtha from "../../assets/shreshtha.jpg"
+import Nidhi from "../../assets/Nidhi.jpg"
 
 const teamMembers = [
   {
@@ -18,94 +20,125 @@ const teamMembers = [
   },
   {
     name: "Dr. Ashwini Sawant",
-    role: "assistant Professor - Electronics and Telecommunication Engineering",
+    role: "Assistant Professor - Electronics and Telecommunication Engineering",
     linkedin: "https://www.linkedin.com/in/ashwini-sawant-661203107/",
     email: "ashwini.sawant@ves.ac.in",
     bgColor: "--color2",
     img: ashwiniMam,
   },
   {
-    name: "Gaurang Rane",
+    name: "Rakshit Sharma",
     role: "Chairperson",
-    email: "2021.gaurang.rane@ves.ac.in",
-    linkedin: "https://www.linkedin.com/in/gaurang-rane-a45335245/",
-    github: "https://github.com/gaurang",
+    email: "2022.rakshit.sharma@ves.ac.in",
+    linkedin: "https://www.linkedin.com/in/rakshit-kumar-sharma-5b25942ab/",
+    github: "https://github.com/Rakshit5467",
     bgColor: "--color1",
-    img: gaurang,
+    img: rakshit,
   },
   {
-    name: "Anoushka Menon",
+    name: "Ayush Patil",
     role: "Chief Executive Officer",
-    email: "2021.anoushka.menon@ves.ac.in",
-    linkedin: "https://www.linkedin.com/in/anoushka--menon/",
-    github: "https://github.com/anoushka",
+    email: "2022.ayush.patil@ves.ac.in",
+    linkedin: "https://www.linkedin.com/in/ayush-patil-977a3134b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    github: "",
     bgColor: "--color2",
-    img: anoushka,
+    img: ayush,
   },
   {
-    name: "Veydant Sharma",
+    name: "Shreshtha Kadam",
     role: "Secretary",
-    email: "2022.veydant.sharma@ves.ac.in",
-    linkedin: "https://www.linkedin.com/in/veydant-sharma-122339243/",
-    github: "https://github.com/veydant",
+    email: "d2023.shreshtha.kadam@ves.ac.in",
+    linkedin: "https://www.linkedin.com/in/shreshtha-kadam-a68052233/",
+    github: "https://github.com/Shreshtha0519",
     bgColor: "--color1",
-    img: veydant,
+    img: shreshtha,
   },
   {
-    name: "Ishan Joshi",
+    name: "Nidhi Bamhane",
     role: "Managing Executive Officer",
-    email: "2022.ishan.joshi@ves.ac.in",
-    linkedin: "https://www.linkedin.com/in/ishan-joshi-3677042a7/",
-    github: "https://github.com/ishan",
+    email: "2023.nidhi.bamhane@ves.ac.in",
+    linkedin: "https://www.linkedin.com/in/nidhi-bamhane-13a5b72b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    github: "https://github.com/Nidhi2455",
     bgColor: "--color2",
-    img: Ishan,
+    img: Nidhi,
   },
 ];
 
 export default function Forms() {
   const [activeIndex, setActiveIndex] = useState(null);
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(
+      'service_0cx4ddf', // Replace with your EmailJS service ID
+      'template_hbhvs8k', // Replace with your template ID
+      form.current,
+      'NWAs1XuuZPPppwGiQ' // Replace with your public API key
+    ).then(() => {
+      alert("Message sent successfully!");
+      e.target.reset();
+    }).catch((err) => {
+      alert("Failed to send message. Try again.");
+      console.error(err);
+    });
+  };
 
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center min-h-[70vh] p-6 mx-auto gap-6 w-[95%] mb-8">
       {/* Contact Form */}
       <div className="w-full lg:w-1/2 custom-shadow p-6 shadow-lg text-center">
         <h3 className="mb-4">Send a Message</h3>
-        <div className="flex flex-col sm:flex-row gap-3 mb-4">
+        <form ref={form} onSubmit={sendEmail}>
+          <div className="flex flex-col sm:flex-row gap-3 mb-4">
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+              className="flex-1 p-3 bg-[var(--color2)] shadow-md placeholder-[var(--black)] focus:outline-none rounded-xl"
+            />
+            <input
+              type="text"
+              name="contact"
+              placeholder="Contact Number"
+              className="flex-1 p-3 bg-[var(--color2)] shadow-md placeholder-[var(--black)] focus:outline-none rounded-xl"
+            />
+          </div>
+          <div className="flex flex-col sm:flex-row gap-3 mb-4">
+            <input
+              type="text"
+              name="year"
+              placeholder="Year"
+              className="flex-1 p-3 bg-[var(--color2)] shadow-md placeholder-[var(--black)] focus:outline-none rounded-xl"
+            />
+            <input
+              type="text"
+              name="branch"
+              placeholder="Branch"
+              className="flex-1 p-3 bg-[var(--color2)] shadow-md placeholder-[var(--black)] focus:outline-none rounded-xl"
+            />
+          </div>
           <input
-            type="text"
-            placeholder="Your Name"
-            className="flex-1 p-3 bg-[var(--color2)] shadow-md placeholder-[var(--black)] focus:outline-none rounded-xl"
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            className="w-full p-3 mb-4 bg-[var(--color2)] shadow-md placeholder-[var(--black)] focus:outline-none rounded-xl"
           />
-          <input
-            type="text"
-            placeholder="Contact Number"
-            className="flex-1 p-3 bg-[var(--color2)] shadow-md placeholder-[var(--black)] focus:outline-none rounded-xl"
-          />
-        </div>
-        <div className="flex flex-col sm:flex-row gap-3 mb-4">
-          <input
-            type="text"
-            placeholder="Year"
-            className="flex-1 p-3 bg-[var(--color2)] shadow-md placeholder-[var(--black)] focus:outline-none rounded-xl"
-          />
-          <input
-            type="text"
-            placeholder="Branch"
-            className="flex-1 p-3 bg-[var(--color2)] shadow-md placeholder-[var(--black)] focus:outline-none rounded-xl"
-          />
-        </div>
-        <input
-          type="email"
-          placeholder="Your Email"
-          className="w-full p-3 mb-4 bg-[var(--color2)] shadow-md placeholder-[var(--black)] focus:outline-none rounded-xl"
-        />
-        <textarea
-          placeholder="Your Message"
-          className="w-full p-3 h-28 bg-[var(--color2)] shadow-md placeholder-[var(--black)] focus:outline-none rounded-xl"
-        ></textarea>
-        <button className="w-full p-3 mt-4 bg-[var(--color3)] text-white text-lg font-semibold cursor-pointer hover:bg-[var(--color4)] rounded-xl">
-          Submit
-        </button>
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+            className="w-full p-3 h-28 bg-[var(--color2)] shadow-md placeholder-[var(--black)] focus:outline-none rounded-xl"
+          ></textarea>
+          <button
+            type="submit"
+            className="w-full p-3 mt-4 bg-[var(--color3)] text-white text-lg font-semibold cursor-pointer hover:bg-[var(--color4)] rounded-xl"
+          >
+            Submit
+          </button>
+        </form>
       </div>
 
       {/* Team Members List */}
