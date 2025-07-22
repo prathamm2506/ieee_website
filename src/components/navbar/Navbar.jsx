@@ -95,7 +95,8 @@ const Navbar = () => {
               <i className={`bx bxs-chevron-down arrow ${activeDropdown === "council" ? "rotate" : ""}`}></i>
               <ul className={`sub-menu ${activeDropdown === "council" ? "show" : ""}`}>
                 <Link to="/current_council" onClick={closeSidebar}><li><a href="#" className="uppercase">Year (24-25)</a></li></Link>
-                <Link to="/previousCouncil" onClick={closeSidebar}><li><a href="#" className="uppercase">Year (24-25)</a></li></Link>
+                <Link to="/previousCouncil2425" onClick={closeSidebar}><li><a href="#" className="uppercase">Year (24-25)</a></li></Link>
+                <Link to="/previousCouncil" onClick={closeSidebar}><li><a href="#" className="uppercase">Year (23-24)</a></li></Link>
               </ul>
             </li>
 

@@ -12,6 +12,7 @@
     "replace-webp": "node replace-to-webp.cjs"
   },
   "dependencies": {
+    "emailjs-com": "^3.2.0",
     "ieee_website": "file:",
     "react": "^18.3.1",
     "react-countup": "^6.5.3",
