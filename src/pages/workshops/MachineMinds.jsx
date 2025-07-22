@@ -1,6 +1,6 @@
 import React from 'react';
 import EventDescription from '../../components/Event_description/EventDescription';
-import machineMindsImage from '../../assets/Machineminds.png';
+import machineMindsImage from '../../assets/Machineminds.webp';
 import { useNavigate } from 'react-router-dom';
 
 const MachineMinds = () => {

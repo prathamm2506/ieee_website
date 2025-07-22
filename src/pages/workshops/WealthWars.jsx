@@ -1,6 +1,6 @@
 import React from 'react';
 import EventDescription from '../../components/Event_description/EventDescription';
-import wealthWarsImage from '../../assets/WealthWars.png';
+import wealthWarsImage from '../../assets/WealthWars.webp';
 import { useNavigate } from 'react-router-dom';
 
 const WealthWars = () => {

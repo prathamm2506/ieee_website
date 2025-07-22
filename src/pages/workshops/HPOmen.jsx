@@ -1,6 +1,6 @@
 import React from 'react';
 import EventDescription from '../../components/Event_description/EventDescription';
-import eventImage from '../../assets/event.png';
+import eventImage from '../../assets/event.webp';
 import { useNavigate } from 'react-router-dom';
 
 const HpOmen = () => {

@@ -1,9 +1,9 @@
 import React from "react";
 import Card from "../card2/Card2";
-import resource from "../../assets/techincalResources.jpeg";
-import network from "../../assets/network.jpeg";
-import skill from "../../assets/skill.jpeg";
-import certi from "../../assets/certi.jpeg";
+import resource from "../../assets/techincalResources.webp";
+import network from "../../assets/network.webp";
+import skill from "../../assets/skill.webp";
+import certi from "../../assets/certi.webp";
 
 import "./Provide.css";
 

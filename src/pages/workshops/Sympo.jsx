@@ -1,6 +1,6 @@
 import React from 'react';
 import EventDescription from '../../components/Event_description/EventDescription';
-import melangeImage from '../../assets/sympo.jpg';
+import melangeImage from '../../assets/sympo.webp';
 
 const Melange = () => {
   return (

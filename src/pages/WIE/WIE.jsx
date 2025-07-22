@@ -2,10 +2,10 @@ import React from "react";
 import Card from "../../components/Card/Card";
 import "./WIE.css"; 
 
-import logo from "../../assets/ieee_wie_purple_4c.png";
-import Reet from "../../assets/TEs/Reet.jpg";
-import img1 from "../../assets/test_img.jpg";
-import aditri from "../../assets/BEs/aditri.png";
+import logo from "../../assets/ieee_wie_purple_4c.webp";
+import Reet from "../../assets/TEs/Reet.webp";
+import img1 from "../../assets/test_img.webp";
+import aditri from "../../assets/BEs/aditri.webp";
 
 const Wie = () => {
   const wieInfo = [

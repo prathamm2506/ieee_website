@@ -1,8 +1,8 @@
 import React from "react";
-import juhi from "../../assets/juhi.jpeg"
-import mansi from "../../assets/mansi.jpeg"
-import tamanna from "../../assets/tamanna.jpeg"
-import madhumita from "../../assets/madhumita.jpeg"
+import juhi from "../../assets/juhi.webp"
+import mansi from "../../assets/mansi.webp"
+import tamanna from "../../assets/tamanna.webp"
+import madhumita from "../../assets/madhumita.webp"
 
 const Testimonials = () => {
   const testimonials = [

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Societies.css'
-import sample_image from '../../assets/sample_society_image.png'
+import sample_image from '../../assets/sample_society_image.webp'
 const Societies = () => {
   return (
     <div className='Society'>

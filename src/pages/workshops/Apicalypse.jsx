@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import EventDescription from '../../components/Event_description/EventDescription';
-import apicalypseImage from '../../assets/Apicalypse.png';
+import apicalypseImage from '../../assets/Apicalypse.webp';
 
 const APIcalypse = () => {
   const navigate = useNavigate();

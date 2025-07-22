@@ -1,6 +1,6 @@
 import React from 'react';
 import EventDescription from '../../components/Event_description/EventDescription';
-import financeImage from '../../assets/finance.jpg';
+import financeImage from '../../assets/finance.webp';
 
 const FinancialLiteracy = () => {
   return (

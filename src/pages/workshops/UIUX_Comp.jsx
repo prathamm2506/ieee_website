@@ -1,6 +1,6 @@
 import React from 'react';
 import EventDescription from '../../components/Event_description/EventDescription';
-import uiuxImage from '../../assets/UIUX.png';
+import uiuxImage from '../../assets/UIUX.webp';
 
 const UIUXCompetition = () => {
   return (

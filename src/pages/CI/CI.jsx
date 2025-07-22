@@ -1,6 +1,6 @@
 import React from "react";
 import "./CI.css";
-import cieeeLogo from "../../assets/ieee_ci.png"; // Keeping only this local image
+import cieeeLogo from "../../assets/ieee_ci.webp"; // Keeping only this local image
 
 const ComputationalIntelligence = () => {
   const features = [

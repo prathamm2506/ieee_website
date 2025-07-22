@@ -1,14 +1,14 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './Header.css';
 
-import img1 from '../../assets/maam.jpg';
-import img2 from '../../assets/head.png';
-import img3 from '../../assets/ml.jpg';
-import img4 from '../../assets/GroupPhoto.jpg'
-import img5 from '../../assets/ml2.jpg';
-import img6 from '../../assets/uiux.jpg'
-import img7 from '../../assets/council.png';
-import img8 from '../../assets/photshootCouncil.jpg'
+import img1 from '../../assets/maam.webp';
+import img2 from '../../assets/head.webp';
+import img3 from '../../assets/ml.webp';
+import img4 from '../../assets/GroupPhoto.webp'
+import img5 from '../../assets/ml2.webp';
+import img6 from '../../assets/uiux.webp'
+import img7 from '../../assets/council.webp';
+import img8 from '../../assets/photshootCouncil.webp'
 
 const Header = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

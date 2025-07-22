@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/logo-sidebar.png";
+import logo from "../../assets/logo-sidebar.webp";
 import { Link } from "react-router-dom";
 
 export default function Footer() {

@@ -1,6 +1,6 @@
 import React from 'react';
 import EventDescription from '../../components/Event_description/EventDescription';
-import cryptoChromeImage from '../../assets/event.png';
+import cryptoChromeImage from '../../assets/event.webp';
 import { useNavigate } from 'react-router-dom';
 
 const CryptoChrome = () => {

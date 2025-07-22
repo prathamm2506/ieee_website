@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { FaChevronDown, FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
-import greshaMam from "../../assets/faculty/Gresha ma'am.png"
-import ashwiniMam from "../../assets/faculty/Ashwini ma'am.png";
-import rakshit from "../../assets/rakshit.png"
-import ayush from "../../assets/ayush.png"
-import shreshtha from "../../assets/shreshtha.jpg"
-import Nidhi from "../../assets/Nidhi.jpg"
+import greshaMam from "../../assets/faculty/Gresha ma'am.webp"
+import ashwiniMam from "../../assets/faculty/Ashwini ma'am.webp";
+import rakshit from "../../assets/rakshit.webp"
+import ayush from "../../assets/ayush.webp"
+import shreshtha from "../../assets/shreshtha.webp"
+import Nidhi from "../../assets/Nidhi.webp"
 
 const teamMembers = [
   {

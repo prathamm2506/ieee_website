@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css"; // Ensure responsive styles are added here
-import logo from "../../assets/logo.png";
-import logorev from "../../assets/logorev.png";
-import logoside from "../../assets/logo-sidebar.png";
+import logo from "../../assets/logo.webp";
+import logorev from "../../assets/logorev.webp";
+import logoside from "../../assets/logo-sidebar.webp";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import EventDescription from '../../components/Event_description/EventDescription';
-import paperPresentationImage from '../../assets/Paperquest.png';
+import paperPresentationImage from '../../assets/Paperquest.webp';
 import { useNavigate } from 'react-router-dom';
 
 const PaperQuest = () => {

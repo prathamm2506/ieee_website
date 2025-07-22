@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../components/Card/Card";
-import img1 from "../assets/test_img.jpg";
+import img1 from "../assets/test_img.webp";
 
 const PrevCouncil1 = () => {
   return (

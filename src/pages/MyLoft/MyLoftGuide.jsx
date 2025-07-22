@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
 import './MyLoftGuide.css';
 // Import your screenshot images
-import selectInstituteImg from '../../assets/instituteList.png';
-import signUpPromptImg from '../../assets/signupLink.png';
-import signUpFormImg from '../../assets/signupDetails.png';
-import emailVerifyImg from '../../assets/verifyEmail.png';
-import signInFormImg from '../../assets/signin.png';
-import vpnConfigImg from '../../assets/qr.png';
-import selectInstituteImg2 from '../../assets/instituteList2.png';
-import signUpPromptImg2 from '../../assets/signupLink2.png';
-import signUpFormImg2 from '../../assets/signupDetails2.png';
-import emailVerifyImg2 from '../../assets/verifyEmail2.png';
-import signInFormImg2 from '../../assets/signin2.png';
-import appEResourcesImg from '../../assets/myloftapp3.png';
-import appSearchImg from '../../assets/myloftapp2.png';
-import appIEEEXploreImg from '../../assets/myloftapp4.png';
-import webDiscoverImg from '../../assets/myloftweb1.png';
-import webSearchImg from '../../assets/myloftweb3.png';
-import webIEEEXploreImg from '../../assets/myloftweb4.png';
+import selectInstituteImg from '../../assets/instituteList.webp';
+import signUpPromptImg from '../../assets/signupLink.webp';
+import signUpFormImg from '../../assets/signupDetails.webp';
+import emailVerifyImg from '../../assets/verifyEmail.webp';
+import signInFormImg from '../../assets/signin.webp';
+import vpnConfigImg from '../../assets/qr.webp';
+import selectInstituteImg2 from '../../assets/instituteList2.webp';
+import signUpPromptImg2 from '../../assets/signupLink2.webp';
+import signUpFormImg2 from '../../assets/signupDetails2.webp';
+import emailVerifyImg2 from '../../assets/verifyEmail2.webp';
+import signInFormImg2 from '../../assets/signin2.webp';
+import appEResourcesImg from '../../assets/myloftapp3.webp';
+import appSearchImg from '../../assets/myloftapp2.webp';
+import appIEEEXploreImg from '../../assets/myloftapp4.webp';
+import webDiscoverImg from '../../assets/myloftweb1.webp';
+import webSearchImg from '../../assets/myloftweb3.webp';
+import webIEEEXploreImg from '../../assets/myloftweb4.webp';
 
 const MyLoftGuide = () => {
   const [activeTab, setActiveTab] = useState('mobile');

@@ -1,8 +1,8 @@
 import React from "react";
 import "./Aboutus.css";
-import img1 from '../../assets/veslogo.jpeg'
-import img2 from '../../assets/advancing tech.png'
-import img3 from '../../assets/logo.png'
+import img1 from '../../assets/veslogo.webp'
+import img2 from '../../assets/advancing tech.webp'
+import img3 from '../../assets/logo.webp'
 
 const Aboutus = () => {
   return (
