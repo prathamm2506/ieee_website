@@ -22,7 +22,7 @@ import SarthakKadam from "../assets/SECouncil/SarthakKadam.jpg.webp";
 import Shantanu from "../assets/SECouncil/Shantanu_.webp";
 import shravan from "../assets/SECouncil/shravan.jpg.webp";
 import sonali from "../assets/SECouncil/sonali.jpg.webp";
-import Sudarsana_Krishnan from "../assets/SECouncil/Sudarsana_Krishnan.webp";
+import Sudarsana from "../assets/SECouncil/Sudarsana_Krishnan.webp";
 import Anshi from "../assets/TEs/Anshi.webp";
 import Arnav from "../assets/TEs/Arnav.webp";
 import ayush from "../assets/TEs/ayush.webp";
@@ -51,7 +51,10 @@ import greshaMam from "../assets/faculty/Gresha ma'am.webp"
 import ashwiniMam from "../assets/faculty/Ashwini ma'am.webp"
 import Akshit from "../assets/TEs/Akshit.webp"
 import Prasad from "../assets/BEs/Prasad.webp"
-
+import Nidhi from "../assets/BE25/Nidhi.webp"
+import Shreshtha from "../assets/BE25/Shreshtha.webp"
+import Purva from "../assets/BE25/Purva.webp"
+import Vedika from "../assets/BE25/Vedika.webp"
 
 const CurrentCouncil = () => {
   return (
@@ -90,7 +93,7 @@ const CurrentCouncil = () => {
             <Card
               name="Ayush Patil"
               role="Chief Executive Officer"
-              image={Ayush}
+              image={ayush}
               email="2022.ayush.patil@ves.ac.in"
               linkedin="https://www.linkedin.com/in/ayush-patil-977a3134b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             />
@@ -132,7 +135,7 @@ const CurrentCouncil = () => {
             <Card
               name="Pratham Matkar"
               role="Senior Web Editor"
-              image={Pratham}
+              image={pratham}
               email="d2022.pratham.matkar@ves.ac.in"
               github="https://github.com/prathamm2506"
               linkedin="https://www.linkedin.com/in/pratham-matkar-a2bb77257/"
@@ -208,7 +211,7 @@ const CurrentCouncil = () => {
             <Card
               name="Rajat Saha"
               role="Jr. Treasurer"
-              image={Rajat}
+              image={rajat}
               email="2023.rajat.saha@ves.ac.in"
               github="https://github.com/PikaPi1402"
               linkedin="https://www.linkedin.com/in/rajat-saha-90877a301"
@@ -287,7 +290,7 @@ const CurrentCouncil = () => {
             <Card
               name="Nafeesa Farook Memon"
               role="Jr. Technical Head"
-              image={Nafeesa}
+              image={nafeesa}
               email="2023.nafeesa.memon@ves.ac.in"
               github="https://github.com/nafeesa46"
               linkedin="https://in.linkedin.com/in/nafeesa-memon-15884b284"
@@ -296,7 +299,7 @@ const CurrentCouncil = () => {
             <Card
               name="Samarth Ganesh Adsare"
               role="Jr. Technical Head"
-              image={Samarth}
+              image={samarth}
               email="samarthad950@mail.com"
               github="https://github.com/Samarth-Ad"
               linkedin="https://www.linkedin.com/in/samarth-adsare-564a6229b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
