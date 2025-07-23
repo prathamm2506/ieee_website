@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../components/Card/Card";
 import Udayan from "../assets/SECouncil/Udayan.JPG.webp";
-import Unnati from "../assets/SECouncil/Unnati_D9A.jpg.webp";
+import Unnati from "../assets/SECouncil/Unnati_D9A.JPG.webp";
 import Vaidehi from "../assets/SECouncil/Vaidehi.webp";
 import aditi from "../assets/SECouncil/aditi.jpg.webp";
 import amogh from "../assets/SECouncil/amogh.jpg.webp";
@@ -10,13 +10,13 @@ import Bhavik from "../assets/SECouncil/Bhavik.jpg.webp";
 import diya from "../assets/SECouncil/diya.webp";
 import Faiza from "../assets/SECouncil/Faiza.jpg.webp";
 import Harsh from "../assets/SECouncil/HarshPatil_.webp";
-import Krish from "../assets/SECouncil/KrishDambir.jpg.webp";
-import Mahek from "../assets/SECouncil/Mahek.jpg.webp";
-import nafeesa from "../assets/SECouncil/nafeesa.jpg.webp";
+import Krish from "../assets/SECouncil/KrishDambir.JPG.webp";
+import Mahek from "../assets/SECouncil/Mahek.JPG.webp";
+import nafeesa from "../assets/SECouncil/nafeesa.JPG.webp";
 import naman from "../assets/SECouncil/naman.webp";
 import prasad from "../assets/SECouncil/prasad.jpg.webp";
-import rajat from "../assets/SECouncil/rajat.jpg.webp";
-import samarth from "../assets/SECouncil/samarth.jpg.webp";
+import rajat from "../assets/SECouncil/rajat.JPG.webp";
+import samarth from "../assets/SECouncil/samarth.JPG.webp";
 import sanket from "../assets/SECouncil/sanket.jpg.webp";
 import SarthakKadam from "../assets/SECouncil/SarthakKadam.jpg.webp";
 import Shantanu from "../assets/SECouncil/Shantanu_.webp";
@@ -229,7 +229,7 @@ const CurrentCouncil = () => {
             <Card
               name="Unnati S Singh"
               role="Jr. PR Head"
-              image={Krish}
+              image={Unnati}
               email="2023.unnati.singh@ves.ac.in"
               github="https://github.com/unnss18"
               linkedin="http://linkedin.com/in/unnati-s-6310b32a1"
