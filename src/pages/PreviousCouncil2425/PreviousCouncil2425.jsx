@@ -1,33 +1,5 @@
 import React from 'react';
 import './PreviousCouncil2425.css';
-import Anshi from "../assets/TEs/Anshi.webp";
-import Arnav from "../assets/TEs/Arnav.webp";
-import ayush from "../assets/TEs/ayush.webp";
-import Ishan from "../assets/TEs/Ishan.webp";
-import Kshitij from "../assets/TEs/Kshitij.webp";
-import maithili from "../assets/TEs/maithili.webp";
-import piyush from "../assets/TEs/piyush.webp";
-import pratham from "../assets/TEs/pratham.webp";
-import Rakshit from "../assets/TEs/Rakshit.webp";
-import Reet from "../assets/TEs/Reet.webp";
-import Tanay from "../assets/TEs/Tanay.webp";
-import veydant from "../assets/TEs/veydant.webp";
-import ShantanuTE from "../assets/TEs/ShantanuTE.webp"
-import anjali from "../assets/TEs/anjali.webp"
-import anoushka from "../assets/BEs/anoushka.webp"
-import ashish from "../assets/BEs/ashish.webp"
-import gaurang from "../assets/BEs/gaurang.webp"
-import rishika from "../assets/BEs/rishika.webp"
-import nihit from "../assets/BEs/nihit.webp"
-import kirti from "../assets/BEs/kirti.webp"
-import kaushik from "../assets/BEs/kaushik.webp";
-import sneha from "../assets/BEs/sneha.webp";
-import aditri from "../assets/BEs/aditri.webp";
-import aditiTE from "../assets/TEs/aditiTE.webp"
-import greshaMam from "../assets/faculty/Gresha ma'am.webp"
-import ashwiniMam from "../assets/faculty/Ashwini ma'am.webp"
-import Akshit from "../assets/TEs/Akshit.webp"
-import Prasad from "../assets/BEs/Prasad.webp"
 
 const CouncilPage = () => {
   // Senior Council Data

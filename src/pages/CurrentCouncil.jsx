@@ -2,55 +2,28 @@ import React from "react";
 import Card from "../components/Card/Card";
 import Udayan from "../assets/SECouncil/Udayan.JPG.webp";
 import Unnati from "../assets/SECouncil/Unnati.webp";
-import Vaidehi from "../assets/SECouncil/Vaidehi.webp";
-import aditi from "../assets/SECouncil/aditi.jpg.webp";
-import amogh from "../assets/SECouncil/amogh.jpg.webp";
-import Anushka from "../assets/SECouncil/Anushka.jpg.webp";
-import Bhavik from "../assets/SECouncil/Bhavik.jpg.webp";
-import diya from "../assets/SECouncil/diya.webp";
-import Faiza from "../assets/SECouncil/Faiza.jpg.webp";
+import Anushka from "../assets/SECouncil/Anushka.JPG.webp";
 import Harsh from "../assets/SECouncil/HarshPatil_.webp";
 import Krish from "../assets/SECouncil/KrishDambir.JPG.webp";
 import Mahek from "../assets/SECouncil/Mahek.JPG.webp";
 import nafeesa from "../assets/SECouncil/nafeesa.JPG.webp";
-import naman from "../assets/SECouncil/naman.webp";
-import prasad from "../assets/SECouncil/prasad.jpg.webp";
 import rajat from "../assets/SECouncil/rajat.JPG.webp";
 import samarth from "../assets/SECouncil/samarth.JPG.webp";
-import sanket from "../assets/SECouncil/sanket.jpg.webp";
-import SarthakKadam from "../assets/SECouncil/SarthakKadam.jpg.webp";
-import Shantanu from "../assets/SECouncil/Shantanu_.webp";
-import shravan from "../assets/SECouncil/shravan.jpg.webp";
-import sonali from "../assets/SECouncil/sonali.jpg.webp";
+import SarthakKadam from "../assets/SECouncil/SarthakKadam.JPG.webp";
+import sonali from "../assets/SECouncil/sonali.JPG.webp";
 import Sudarsana from "../assets/SECouncil/Sudarsana_Krishnan.webp";
 import Anshi from "../assets/TEs/Anshi.webp";
 import Arnav from "../assets/TEs/Arnav.webp";
 import ayush from "../assets/TEs/ayush.webp";
 import Ishan from "../assets/TEs/Ishan.webp";
 import Kshitij from "../assets/TEs/Kshitij.webp";
-import maithili from "../assets/TEs/maithili.webp";
-import piyush from "../assets/TEs/piyush.webp";
 import pratham from "../assets/TEs/pratham.webp";
 import Rakshit from "../assets/TEs/Rakshit.webp";
 import Reet from "../assets/TEs/Reet.webp";
 import Tanay from "../assets/TEs/Tanay.webp";
-import veydant from "../assets/TEs/veydant.webp";
-import ShantanuTE from "../assets/TEs/ShantanuTE.webp"
-import anjali from "../assets/TEs/anjali.webp"
-import anoushka from "../assets/BEs/anoushka.webp"
-import ashish from "../assets/BEs/ashish.webp"
-import gaurang from "../assets/BEs/gaurang.webp"
-import rishika from "../assets/BEs/rishika.webp"
-import nihit from "../assets/BEs/nihit.webp"
-import kirti from "../assets/BEs/kirti.webp"
-import kaushik from "../assets/BEs/kaushik.webp";
-import sneha from "../assets/BEs/sneha.webp";
-import aditri from "../assets/BEs/aditri.webp";
-import aditiTE from "../assets/TEs/aditiTE.webp"
 import greshaMam from "../assets/faculty/Gresha ma'am.webp"
 import ashwiniMam from "../assets/faculty/Ashwini ma'am.webp"
 import Akshit from "../assets/TEs/Akshit.webp"
-import Prasad from "../assets/BEs/Prasad.webp"
 import Nidhi from "../assets/BE25/Nidhi.webp"
 import Shreshtha from "../assets/BE25/Shreshtha.webp"
 import Purva from "../assets/BE25/Purva.webp"
@@ -169,7 +142,7 @@ const CurrentCouncil = () => {
             <Card
               name="Anshi Tiwari"
               role="Women in Engineering"
-              image={Krish}
+              image={Anshi}
               email="2022.anshi.tiwari@ves.ac.in"
               github="https://github.com/anshi1108"
               linkedin="https://www.linkedin.com/in/anshi-tiwari-b4a6642a7/"
@@ -238,7 +211,7 @@ const CurrentCouncil = () => {
             <Card
               name="Anushka Sharma"
               role="Jr. Graphics Head"
-              image={Krish}
+              image={Anushka}
               email="2023.anushka.sharma@ves.ac.in"
               github="https://github.com/Anu-shhkaa"
               linkedin="https://www.linkedin.com/in/anushka-sharma-0543832a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
@@ -247,7 +220,7 @@ const CurrentCouncil = () => {
             <Card
               name="Sarthak Kadam"
               role="Jr. Graphics Head"
-              image={Krish}
+              image={SarthakKadam}
               email="2023.sarthak.kadam@ves.ac.in"
               linkedin="https://www.linkedin.com/in/sarthak-kadam-1b7a20214?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             />
@@ -264,7 +237,7 @@ const CurrentCouncil = () => {
             <Card
               name="Sonali Parishwad"
               role="Jr. Editor"
-              image={Krish}
+              image={sonali}
               email="2023.sonali.parishwad@ves.ac.in"
               github="https://github.com/sonali2905"
               linkedin="https://www.linkedin.com/in/sonali-parishwad-124a0934b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
