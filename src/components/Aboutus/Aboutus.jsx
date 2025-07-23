@@ -1,7 +1,7 @@
 import React from "react";
 import "./Aboutus.css";
 import img1 from '../../assets/veslogo.webp'
-import img2 from '../../assets/advancing tech.webp'
+import img2 from '../../assets/advancing_tech.webp'
 import img3 from '../../assets/logo.webp'
 
 const Aboutus = () => {
@@ -15,7 +15,7 @@ const Aboutus = () => {
 
       <div className="para1">
         <div className="p1">
-          Vivekanand Education Society’s Institute of Technology (VESIT) was
+          Vivekanand Education Society's Institute of Technology (VESIT) was
           established in 1984, with the aim of providing professional education
           in the field of Engineering. This institute is affiliated to the
           University of Mumbai and follows the rules and regulations laid down

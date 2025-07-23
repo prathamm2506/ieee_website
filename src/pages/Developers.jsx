@@ -4,12 +4,12 @@ import img1 from "../assets/test_img.webp";
 import pratham from "../assets/TEs/pratham.webp";
 import Rakshit from "../assets/TEs/Rakshit.webp";
 import Harsh from "../assets/SECouncil/HarshPatil_.webp";
-import Krish from "../assets/SECouncil/KrishDambir.jpg.webp";
-import nafeesa from "../assets/SECouncil/nafeesa.jpg.webp";
+import Krish from "../assets/SECouncil/KrishDambir.JPG.webp";
+import nafeesa from "../assets/SECouncil/nafeesa.JPG.webp";
 import Sudarsana_Krishnan from "../assets/SECouncil/Sudarsana_Krishnan.webp";
 import Arnav from "../assets/TEs/Arnav.webp";
 import Shantanu from "../assets/SECouncil/Shantanu_.webp";
-import Anushka from "../assets/SECouncil/Anushka.jpg.webp";
+import Anushka from "../assets/SECouncil/Anushka.JPG.webp";
 import sneha from "../assets/BEs/sneha.webp";
 import kirti from "../assets/BEs/kirti.webp";
 import anjali from "../assets/TEs/anjali.webp"
