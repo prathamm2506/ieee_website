@@ -1,6 +1,6 @@
 import React from 'react';
 import EventDescription from '../../components/Event_description/EventDescription';
-import uiuxImage from '../../assets/uiux.webp';
+import uiux from '../../assets/uiux.webp';
 
 const UIUXCompetition = () => {
   return (
@@ -14,7 +14,7 @@ const UIUXCompetition = () => {
         title="UI/UX Competition"
         subtitle="Turning Design Skills into Reality"
         date="Organized by WIE-IEEE VESIT"
-        image={uiuxImage}
+        image={uiux}
         description="As a direct successor to our UI/UX Workshop, the UI/UX Competition challenged students to apply their newly learned skills into building creative and user-friendly app prototypes using Figma.
 
         Organized by the Women in Engineering (WIE) department of IEEE VESIT, the competition featured a thoughtful problem statement — 'Women's Engineering Network.' Participants showcased their unique ideas and aesthetic design skills while addressing real-world needs.
