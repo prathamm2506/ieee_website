@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../components/Card/Card";
-import Udayan from "../assets/SECouncil/Udayan.jpg.webp";
+import Udayan from "../assets/SECouncil/Udayan.JPG.webp";
 import Unnati from "../assets/SECouncil/Unnati_D9A.jpg.webp";
 import Vaidehi from "../assets/SECouncil/Vaidehi.webp";
 import aditi from "../assets/SECouncil/aditi.jpg.webp";
