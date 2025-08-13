@@ -13,7 +13,7 @@ import ashish from "../../assets/BEs/ashish.webp";
 import kaushik from "../../assets/BEs/kaushik.webp";
 import kirti from "../../assets/BEs/kirti.webp";
 import nihit from "../../assets/BEs/nihit.webp";
-import prasad from "../../assets/BEs/prasad.webp";
+import prasad from "../../assets/BEs/Prasad.webp";
 import rishika from "../../assets/BEs/rishika.webp";
 import sneha from "../../assets/BEs/sneha.webp";
 
