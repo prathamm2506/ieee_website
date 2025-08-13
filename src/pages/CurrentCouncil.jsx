@@ -81,6 +81,15 @@ const CurrentCouncil = () => {
             />
 
             <Card
+              name="Pratham Matkar"
+              role="Senior Web Editor"
+              image={pratham}
+              email="d2022.pratham.matkar@ves.ac.in"
+              github="https://github.com/prathamm2506"
+              linkedin="https://www.linkedin.com/in/pratham-matkar-a2bb77257/"
+            />
+
+            <Card
               name="Reet Sharma"
               role="Senior Public Relations Head"
               image={Reet}
@@ -103,15 +112,6 @@ const CurrentCouncil = () => {
               email="2022.akshit.ramrane@ves.ac.in"
               github="https://github.com/Akshit-Ramrane"
               linkedin="https://www.linkedin.com/in/akshit-ramrane-b1980825b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            />
-
-            <Card
-              name="Pratham Matkar"
-              role="Senior Web Editor"
-              image={pratham}
-              email="d2022.pratham.matkar@ves.ac.in"
-              github="https://github.com/prathamm2506"
-              linkedin="https://www.linkedin.com/in/pratham-matkar-a2bb77257/"
             />
 
             <Card
