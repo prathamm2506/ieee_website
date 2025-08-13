@@ -81,6 +81,15 @@ const CurrentCouncil = () => {
             />
 
             <Card
+              name="Pratham Matkar"
+              role="Senior Web Editor"
+              image={pratham}
+              email="d2022.pratham.matkar@ves.ac.in"
+              github="https://github.com/prathamm2506"
+              linkedin="https://www.linkedin.com/in/pratham-matkar-a2bb77257/"
+            />
+
+            <Card
               name="Reet Sharma"
               role="Senior Public Relations Head"
               image={Reet}
