@@ -37,7 +37,7 @@ import PreviousCouncil from './pages/PreviousCouncil/PreviousCouncil.jsx'
 import mongo from "./pages/workshops/Mongo.jsx"
 import MongoInit from './pages/workshops/Mongo.jsx';
 import UIUXWorkshop from './pages/workshops/uiux_25.jsx';
-import PCBWorkshop from './pages/workshops/pcb.jsx';
+import PCB from './pages/workshops/pcb.jsx';
 
 function App() {
   return (
@@ -76,7 +76,7 @@ function App() {
         <Route path="/financial_literacy" element={<FinancialLiteracy />} />
         <Route path="/mongo" element={<MongoInit />} />
         <Route path="/uiux25" element={<UIUXWorkshop />} />
-        <Route path="/pcb" element={<PCBWorkshop />} />
+        <Route path="/pcb" element={<PCB />} />
 
       </Routes>
       <Footer />
