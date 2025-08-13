@@ -3,6 +3,7 @@ import "./Navbar.css"; // Ensure responsive styles are added here
 import logo from "../../assets/logo.webp";
 import logorev from "../../assets/logorev.webp";
 import logoside from "../../assets/logo-sidebar.webp";
+import PreviousCouncil2425 from "../../pages/PreviousCouncil2425/PreviousCouncil2425.jsx";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -94,8 +95,8 @@ const Navbar = () => {
               <a href="#" onClick={() => toggleDropdown("council")}>COUNCIL</a>
               <i className={`bx bxs-chevron-down arrow ${activeDropdown === "council" ? "rotate" : ""}`}></i>
               <ul className={`sub-menu ${activeDropdown === "council" ? "show" : ""}`}>
-                <Link to="/current_council" onClick={closeSidebar}><li><a href="#" className="uppercase">Year (24-25)</a></li></Link>
-                <Link to="/previousCouncil2425" onClick={closeSidebar}><li><a href="#" className="uppercase">Year (24-25)</a></li></Link>
+                <Link to="/current_council" onClick={closeSidebar}><li><a href="#" className="uppercase">Year (25-26)</a></li></Link>
+                <Link to='/PreviousCouncil2425' onClick={closeSidebar}><li><a href="#" className="uppercase">Year (24-25)</a></li></Link>
                 <Link to="/previousCouncil" onClick={closeSidebar}><li><a href="#" className="uppercase">Year (23-24)</a></li></Link>
               </ul>
             </li>

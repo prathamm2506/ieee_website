@@ -23,7 +23,13 @@ const Calendar = () => {
     { day: 19, month: 3, year: 2025, title: "NEX-IOT Day 1", time: "2:30 PM - 4:30 PM", link: "/nexiot" },
     { day: 20, month: 3, year: 2025, title: "NEX-IOT Day 2", time: "2:30 PM - 4:30 PM", link: "/nexiot" },
     { day: 25, month: 3, year: 2025, title: "Wealth Wars (Praxis 25)", time: "2:30 PM onwards", link: "/wealth_wars" },
-    { day: 7, month: 4, year: 2025, title: "Melange 25 (Symposium)", time: "2:30 PM - 4:30 PM", link: "/melange" }
+    { day: 7, month: 4, year: 2025, title: "Melange 25 (Symposium)", time: "2:30 PM - 4:30 PM", link: "/melange" },
+    { day: 4, month: 7, year: 2025, title: "MONGO.INIT() Day 1", time: "2:30 PM - 4:30 PM", link: "/mongo" },
+    { day: 5, month: 7, year: 2025, title: "MONGO.INIT() Day 2", time: "2:30 PM - 4:30 PM", link: "/mongo" },
+    { day: 17, month: 7, year: 2025, title: "BUILD.PCB Day 1", time: "2:30 PM", link: "/pcb" },
+    { day: 18, month: 7, year: 2025, title: "BUILD.PCB Day 2", time: "2:30 PM", link: "/pcb" },
+    { day: 31, month: 7, year: 2025, title: "UI/UX Workshop Day 1", time: "2:30 PM", link: "/uiux25" },
+    { day: 1, month: 8, year: 2025, title: "UI/UX Workshop Day 2", time: "2:30 PM", link: "/uiux25" }
   ];
 
   const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];

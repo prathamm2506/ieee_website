@@ -16,6 +16,8 @@ import Darkb from './components/Darkb/Darkb';
 import Societies3 from './components/Societies-3/Societies';
 import Calendar from './components/Calendar/Calendar.jsx';
 import MyLoftGuide from './pages/MyLoft/MyLoftGuide.jsx'
+import PreviousCouncil2425 from "./pages/PreviousCouncil2425/PreviousCouncil2425.jsx"
+
 
 // Workshops
 import VesitTank from "./pages/workshops/VesitTank";
@@ -32,6 +34,10 @@ import Melange from './pages/workshops/Sympo.jsx';
 import UIUXCompetition from './pages/workshops/UIUX_Comp.jsx';
 import FinancialLiteracy from './pages/workshops/Finance.jsx';
 import PreviousCouncil from './pages/PreviousCouncil/PreviousCouncil.jsx'
+import mongo from "./pages/workshops/Mongo.jsx"
+import MongoInit from './pages/workshops/Mongo.jsx';
+import UIUXWorkshop from './pages/workshops/uiux_25.jsx';
+import PCBWorkshop from './pages/workshops/pcb.jsx';
 
 function App() {
   return (
@@ -51,6 +57,8 @@ function App() {
         {/* <Route path="/societies/ci" element={<CI />} /> */}
         <Route path="/myloft" element={<MyLoftGuide />} />
         <Route path="/previousCouncil" element={<PreviousCouncil />} />
+        <Route path="/PreviousCouncil2425" element={<PreviousCouncil2425 />} />
+
 
         {/* Workshop Routes */}
         <Route path="/vesit_tank" element={<VesitTank />} />
@@ -66,6 +74,9 @@ function App() {
         <Route path="/melange" element={<Melange />} />
         <Route path="/uiux_competition" element={<UIUXCompetition />} />
         <Route path="/financial_literacy" element={<FinancialLiteracy />} />
+        <Route path="/mongo" element={<MongoInit />} />
+        <Route path="/uiux25" element={<UIUXWorkshop />} />
+        <Route path="/pcb" element={<PCBWorkshop />} />
 
       </Routes>
       <Footer />
