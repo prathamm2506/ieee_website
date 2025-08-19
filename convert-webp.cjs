@@ -18,10 +18,16 @@ function convertImagesInDir(dir) {
         const outputFile = path.basename(entry.name, ext) + ".webp";
         const outputPath = path.join(dir, outputFile);
 
+        // ✅ Skip conversion if .webp already exists
+        if (fs.existsSync(outputPath)) {
+          console.log(`⚡ Skipping (already converted): ${outputPath}`);
+          return;
+        }
+
         sharp(fullPath)
-        .rotate() // 🔄 auto-fixes tilted images
-        .webp({ quality: 80 })
-        .toFile(outputPath)
+          .rotate() // 🔄 auto-fixes tilted images
+          .webp({ quality: 80 })
+          .toFile(outputPath)
           .then(() =>
             console.log(`✅ Converted: ${fullPath} -> ${outputPath}`)
           )

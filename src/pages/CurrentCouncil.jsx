@@ -1,33 +1,34 @@
 import React from "react";
 import Card from "../components/Card/Card";
-import Udayan from "../assets/SECouncil/Udayan.JPG.webp";
-import Unnati from "../assets/SECouncil/Unnati.webp";
-import Anushka from "../assets/SECouncil/Anushka.JPG.webp";
-import Harsh from "../assets/SECouncil/HarshPatil_.webp";
-import Krish from "../assets/SECouncil/KrishDambir.JPG.webp";
-import Mahek from "../assets/SECouncil/Mahek.JPG.webp";
-import nafeesa from "../assets/SECouncil/nafeesa.JPG.webp";
-import rajat from "../assets/SECouncil/rajat.JPG.webp";
-import samarth from "../assets/SECouncil/samarth.JPG.webp";
-import SarthakKadam from "../assets/SECouncil/SarthakKadam.JPG.webp";
-import sonali from "../assets/SECouncil/sonali.JPG.webp";
-import Sudarsana from "../assets/SECouncil/Sudarsana_Krishnan.webp";
+import Udayan from "../assets/BE25/Udayan.webp";
+import Unnati from "../assets/BE25/Unnati.webp";
+import Anushka from "../assets/BE25/Anushka.webp";
+import Harsh from "../assets/BE25/Harsh.webp";
+import krish from "../assets/BE25/Krish.webp";
+import Mahek from "../assets/be25/Mahek.webp";
+import nafeesa from "../assets/BE25/Nafeesa.webp";
+import rajat from "../assets/BE25/Rajat.webp";
+import samarth from "../assets/BE25/Samarth.webp";
+import SarthakKadam from "../assets/BE25/Sarthak.webp";
+import sonali from "../assets/BE25/Sonali.webp";
+import Sudarsana from "../assets/BE25/Sudarsana.webp";
 import Anshi from "../assets/TEs/Anshi.webp";
-import Arnav from "../assets/TEs/Arnav.webp";
-import ayush from "../assets/TEs/ayush.webp";
-import Ishan from "../assets/TEs/Ishan.webp";
-import Kshitij from "../assets/TEs/Kshitij.webp";
-import pratham from "../assets/TEs/pratham.webp";
-import Rakshit from "../assets/TEs/Rakshit.webp";
-import Reet from "../assets/TEs/Reet.webp";
-import Tanay from "../assets/TEs/Tanay.webp";
+import Arnav from "../assets/BE25/Arnav.webp";
+import ayush from "../assets/BE25/Ayush.webp";
+import Ishan from "../assets/BE25/Ishan.webp";
+import Kshitij from "../assets/BE25/Kshitij.webp";
+import pratham from "../assets/BE25/Pratham.webp";
+import Rakshit from "../assets/BE25/Rakshit.webp";
+import Reet from "../assets/BE25/Reet.webp";
+import Tanay from "../assets/BE25/Tanay.webp";
 import greshaMam from "../assets/faculty/Gresha ma'am.webp"
 import ashwiniMam from "../assets/faculty/Ashwini ma'am.webp"
-import Akshit from "../assets/TEs/Akshit.webp"
+import Akshit from "../assets/BE25/Akshit.webp"
 import Nidhi from "../assets/BE25/Nidhi.webp"
 import Shreshtha from "../assets/BE25/Shreshtha.webp"
 import Purva from "../assets/BE25/Purva.webp"
 import Vedika from "../assets/BE25/Vedika.webp"
+import Shravani from "../assets/BE25/Shravani.webp"
 
 const CurrentCouncil = () => {
   return (
@@ -134,7 +135,7 @@ const CurrentCouncil = () => {
             <Card
               name="Shravani Kale"
               role="Senior Technical Head"
-              image={Krish}
+              image={Shravani}
               email="2021.shravani.kale@ves.ac.in"
               github="https://github.com/Algoscribe"
             />
@@ -264,7 +265,7 @@ const CurrentCouncil = () => {
             <Card
               name="Shaunak Karambelkar"
               role="Jr. Technical Head"
-              image={Krish}
+              image={krish}
               email="2023.shaunak.karambelkar@ves.ac.in"
               linkedin="https://www.linkedin.com/in/shaunak-karambelkar-4282bb272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             />
@@ -290,7 +291,7 @@ const CurrentCouncil = () => {
             <Card
               name="Krish Dambir"
               role="Jr. Web/App Editor"
-              image={Krish}
+              image={krish}
               email="krishdambir2718@gmail.com"
               github="https://github.com/krishgit24"
               linkedin="https://www.linkedin.com/in/krish-dambir-1701a2289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
@@ -316,10 +317,10 @@ const CurrentCouncil = () => {
         </div>
 
         {/* S.E. s */}
-        <div className="w-full mx-auto px-4 flex flex-col items-center my-8">
+        {/* <div className="w-full mx-auto px-4 flex flex-col items-center my-8">
           <h3 className="uppercase my-8">se council</h3>
           <div className="w-full flex flex-row flex-wrap justify-center items-center gap-8"></div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
