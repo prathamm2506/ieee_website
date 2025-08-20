@@ -4,8 +4,8 @@ import Udayan from "../assets/BE25/Udayan.webp";
 import Unnati from "../assets/BE25/Unnati.webp";
 import Anushka from "../assets/BE25/Anushka.webp";
 import Harsh from "../assets/BE25/Harsh.webp";
-import krish from "../assets/BE25/Krish.webp";
-import Mahek from "../assets/be25/Mahek.webp";
+import krish from "../assets/BE25/Krish.png";
+import mahek from "../assets/BE25/Mahek.webp";
 import nafeesa from "../assets/BE25/Nafeesa.webp";
 import rajat from "../assets/BE25/Rajat.webp";
 import samarth from "../assets/BE25/Samarth.webp";
@@ -29,6 +29,7 @@ import Shreshtha from "../assets/BE25/Shreshtha.webp"
 import Purva from "../assets/BE25/Purva.webp"
 import Vedika from "../assets/BE25/Vedika.webp"
 import Shravani from "../assets/BE25/Shravani.webp"
+import Shaunak from "../assets/BE25/Shaunak.webp"
 
 const CurrentCouncil = () => {
   return (
@@ -73,31 +74,6 @@ const CurrentCouncil = () => {
             />
 
             <Card
-              name="Kshitj Patki"
-              role="Senior Treasurer"
-              image={Kshitij}
-              email="2022.kshitij.patki@ves.ac.in"
-              github="https://github.com/Kush1612"
-              linkedin="https://www.linkedin.com/in/kshitijpatki/"
-            />
-
-            <Card
-              name="Pratham Matkar"
-              role="Senior Web Editor"
-              image={pratham}
-              email="d2022.pratham.matkar@ves.ac.in"
-              github="https://github.com/prathamm2506"
-              linkedin="https://www.linkedin.com/in/pratham-matkar-a2bb77257/"
-            />
-
-            <Card
-              name="Reet Sharma"
-              role="Senior Public Relations Head"
-              image={Reet}
-              email="2022.reet.sharma@ves.ac.in"
-            />
-
-            <Card
               name="Ishan Kiran Joshi"
               role="Senior Public Relations Head"
               image={Ishan}
@@ -106,6 +82,24 @@ const CurrentCouncil = () => {
               linkedin="https://www.linkedin.com/in/ishan-joshi-3677042a7/"
             />
 
+            <Card
+              name="Kshitj Patki"
+              role="Senior Treasurer"
+              image={Kshitij}
+              email="2022.kshitij.patki@ves.ac.in"
+              github="https://github.com/Kush1612"
+              linkedin="https://www.linkedin.com/in/kshitijpatki/"
+            />
+
+
+            {/* <Card
+              name="Reet Sharma"
+              role="Senior Public Relations Head"
+              image={Reet}
+              email="2022.reet.sharma@ves.ac.in"
+            /> */}
+
+            
             <Card
               name="Akshit Ramrane"
               role="Senior Graphics Head"
@@ -185,7 +179,7 @@ const CurrentCouncil = () => {
             <Card
               name="Mahek Kawna"
               role="Jr. Operations"
-              image={Mahek}
+              image={mahek}
               email="2023.mahek.kawna@ves.ac.in"
               github="https://github.com/Mahekkawna"
               linkedin="https://www.linkedin.com/in/mahek-kawna-73530728b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
@@ -265,7 +259,7 @@ const CurrentCouncil = () => {
             <Card
               name="Shaunak Karambelkar"
               role="Jr. Technical Head"
-              image={krish}
+              image={Shaunak}
               email="2023.shaunak.karambelkar@ves.ac.in"
               linkedin="https://www.linkedin.com/in/shaunak-karambelkar-4282bb272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             />
