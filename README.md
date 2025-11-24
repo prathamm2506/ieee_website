@@ -25,7 +25,6 @@ This is the official website for the IEEE Student Branch at VESIT (Vivekanand Ed
 - **Email Integration**: EmailJS
 - **Image Processing**: Sharp (for WebP conversion)
 - **Linting**: ESLint
-- 
 
 ## Project Structure
 
