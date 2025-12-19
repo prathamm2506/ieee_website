@@ -350,7 +350,7 @@ const CurrentCouncil = () => {
               name="Aarush Srivastava"
               role="SE Coordinater"
               image={arush}
-              email="krishdambir2718@gmail.com"
+              // email="krishdambir2718@gmail.com"
               // github="https://github.com/krishgit24"
               linkedin="https://www.linkedin.com/in/aarush-srivastava-094a37332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             />
@@ -362,14 +362,14 @@ const CurrentCouncil = () => {
               github="https://github.com/adil162006"
               linkedin="https://www.linkedin.com/in/mohammad-adil-shaikh-8a43b3320/"
             />
-            {/* <Card
+            <Card
               name="Aditi"
               role="SE Coordinater"
               image={aditi}
-              email="krishdambir2718@gmail.com"
-              github="https://github.com/krishgit24"
-              linkedin="https://www.linkedin.com/in/krish-dambir-1701a2289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            /> */}
+              // email="krishdambir2718@gmail.com"
+              github="https://github.com/ekawadeaditi06"
+              linkedin="https://www.linkedin.com/in/aditi-ekawade-1a534733b"
+            />
             <Card
               name="Anushka Patil "
               role="SE Coordinater"
@@ -435,14 +435,14 @@ const CurrentCouncil = () => {
               github="https://github.com/Harshp006"
               linkedin="https://www.linkedin.com/in/harsh-patange-ab30031b7/"
             />
-             {/* <Card
+             <Card
               name="Himashi Dhanrajani "
               role="SE Coordinater"
               image={himanshi}
-              email="krishdambir2718@gmail.com"
-              github="https://github.com/krishgit24"
-              linkedin="https://www.linkedin.com/in/krish-dambir-1701a2289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            /> */}
+              // email="krishdambir2718@gmail.com"
+              // github="https://github.com/krishgit24"
+              linkedin="https://www.linkedin.com/in/himanshi-dhanrajani-936081329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            />
              <Card
               name="James Lijo"
               role="SE Coordinater"
@@ -472,7 +472,7 @@ const CurrentCouncil = () => {
               role="SE Coordinater"
               image={kashvi}
               // email="krishdambir2718@gmail.com"
-              github="https://github.com/"
+              github="https://github.com/Kashvitickoo"
               linkedin="https://www.linkedin.com/in/kashvi-tickoo-96b752316/"
             />
              <Card
@@ -480,15 +480,16 @@ const CurrentCouncil = () => {
               role="SE Coordinater"
               image={manasvini}
               // email="krishdambir2718@gmail.com"
-              github="https://www.linkedin.com/in/manaswini-joshi-4a1605370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              github="https://github.com/Manas-wini-code"
+              linkedin="https://www.linkedin.com/in/manaswini-joshi-4a1605370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             />
              <Card
               name="Mugdha Kulkarni"
               role="SE Coordinater"
               image={mugdha}
               // email="krishdambir2718@gmail.com"
-              github="https://github.com/Dhruvnthakur"
-              linkedin="https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav"
+              github="https://github.com/2024mugdhakulkarni-cpu"
+              linkedin="https://www.linkedin.com/in/mugdha-kulkarni-a4a47b299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
             />
              <Card
               name="Nikhil Khejrani"
@@ -528,7 +529,7 @@ const CurrentCouncil = () => {
               image={tia}
               // email="krishdambir2718@gmail.com"
               github="https://github.com/2024tiakhanna-pixie"
-              linkedin="https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav"
+              // linkedin="https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav"
             />
              <Card
               name="Utkarsh Poojari"
