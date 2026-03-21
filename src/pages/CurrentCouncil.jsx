@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Card from "../components/Card/Card";
 import Udayan from "../assets/BE25/Udayan.webp";
 import Unnati from "../assets/BE25/Unnati.webp";
@@ -58,17 +58,82 @@ import vansh from "../assets/SE25/Vansh Lalwani .webp"
 import varnika from "../assets/SE25/Varnika.webp"
 import vidushi from "../assets/SE25/Vidushi Singh .webp"
 
-
 const CurrentCouncil = () => {
+  const [showSE, setShowSE] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+  const images = [
+    // Faculty
+    greshaMam, ashwiniMam,
+
+    // Senior
+    Rakshit, ayush, Ishan, pratham, Kshitij,
+    Akshit, Tanay, Shravani, Arnav, Anshi,
+
+    // Junior
+    Shreshtha, Nidhi, Udayan, Unnati, mahek, krish,
+    Purva, rajat, Anushka, SarthakKadam, Harsh,
+    sonali, Sudarsana, Shaunak, nafeesa, samarth, Vedika,
+
+    // SE (IMPORTANT — include ALL)
+    arush, adil, aditi, anushka, archiet, dhruv,
+    dishaD, dishaT, fahad, gunjan, harshP, himanshi,
+    james, janhavi, jitendra, kashvi, manasvini,
+    mugdha, nikhil, riju, riya, shubhada,
+    tia, utkarsh, vansh, varnika, vidushi
+  ];
+
+  let loadedCount = 0;
+
+  const preloadImages = images.map((src) => {
+    return new Promise((resolve) => {
+      const img = new Image();
+      img.src = src;
+
+      img.onload = () => {
+        loadedCount++;
+        resolve();
+      };
+
+      img.onerror = () => {
+        loadedCount++;
+        resolve(); // don't block loading if error
+      };
+    });
+  });
+
+  Promise.all(preloadImages).then(() => {
+    setLoading(false); // ✅ stops ONLY after ALL images load
+  });
+
+}, []);
+  if (loading) {
+  return (
+    <div className="fixed inset-0 flex items-center justify-center bg-white z-50">
+      <div className="flex flex-col items-center gap-4">
+        
+        {/* Spinner */}
+        <div className="w-14 h-14 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
+        
+        {/* Text */}
+        <p className="text-sm tracking-wider text-gray-600">
+          Loading council members...
+        </p>
+
+      </div>
+    </div>
+  );
+}
+
   return (
     <div className="mt-24">
+
       <h2 className="text-center uppercase">Get to know us closer</h2>
-      <div>
-        <div className="w-full mx-auto px-4 flex flex-col items-center my-8">
-          <h3 className="uppercase my-8">Faculty Incharge</h3>
-          <div className="w-full flex flex-row flex-wrap justify-center items-center gap-8">
-            {" "}
-            <Card
+
+      {/* Faculty */}
+      <div className="flex flex-wrap justify-center gap-8 my-8">
+       <Card
               name="Dr. Gresha Bhatia"
               role="Deputy HOD - Computer"
               image={greshaMam}
@@ -80,12 +145,12 @@ const CurrentCouncil = () => {
               image={ashwiniMam}
               email="ashwini.sawant@ves.ac.in"
             />
-          </div>
-        </div>
-        <div className="w-full mx-auto px-4 flex flex-col items-center my-8">
-          <h3 className="uppercase my-8">senior council</h3>
-          <div className="w-full flex flex-row flex-wrap justify-center items-center gap-8">
-            <Card
+      </div>
+
+      {/* Senior */}
+    <h2 className="text-center uppercase">Senior Council</h2>
+      <div className="flex flex-wrap justify-center gap-8 my-8">
+        <Card
               name="Rakshit Sharma"
               role="Chairperson"
               image={Rakshit}
@@ -180,14 +245,12 @@ const CurrentCouncil = () => {
               github="https://github.com/anshi1108"
               linkedin="https://www.linkedin.com/in/anshi-tiwari-b4a6642a7/"
             />
-          </div>
-        </div>
+      </div>
 
-        {/* T.E.s */}
-        <div className="w-full mx-auto px-4 flex flex-col items-center my-8">
-          <h3 className="uppercase my-8">junior council</h3>
-          <div className="w-full flex flex-row flex-wrap justify-center items-center gap-8">
-            <Card
+      {/* Junior */}
+       <h2 className="text-center uppercase">Junior Council</h2>
+      <div className="flex flex-wrap justify-center gap-8 my-8">
+         <Card
               name="Shreshtha Kadam"
               role="Secretary"
               image={Shreshtha}
@@ -339,14 +402,26 @@ const CurrentCouncil = () => {
               github="https://github.com/VedikaParab"
               linkedin="http://linkedin.com/in/vedika-parab"
             />
-          </div>
-        </div>
+      </div>
 
-        {/* S.E. s */}
-        <div className="w-full mx-auto px-4 flex flex-col items-center my-8">
-          <h3 className="uppercase my-8">se council</h3>
-          <div className="w-full flex flex-row flex-wrap justify-center items-center gap-8">
-            <Card
+      {/* Button */}
+      <div className="text-center my-6">
+  <button
+    onClick={() => setShowSE(!showSE)}
+    className="px-6 py-2 rounded-full bg-black text-white font-medium 
+               shadow-md hover:shadow-lg 
+               hover:scale-105 transition-all duration-300"
+  >
+    {showSE ? "Hide SE Council" : "Show SE Council"}
+  </button>
+</div>
+
+      {/* SE */}
+      {showSE && (
+         
+        <div className="flex flex-wrap justify-center gap-8 my-8">
+           
+         <Card
               name="Aarush Srivastava"
               role="SE Coordinater"
               image={arush}
@@ -563,10 +638,9 @@ const CurrentCouncil = () => {
               github="https://github.com/glitch-Mat"
               linkedin="https://www.linkedin.com/in/vidushi-singh-1879293a0/"
             />
-
-          </div>
         </div>
-      </div>
+      )}
+
     </div>
   );
 };
