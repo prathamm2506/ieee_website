@@ -3,12 +3,12 @@ import './Header.css';
 
 import img1 from '../../assets/maam.webp';
 import img2 from '../../assets/head.webp';
-import img3 from '../../assets/ml.webp';
-import img4 from '../../assets/GroupPhoto.webp'
-import img5 from '../../assets/ml2.webp';
-import img6 from '../../assets/uiux.webp'
-import img7 from '../../assets/council.webp';
-import img8 from '../../assets/photshootCouncil.webp'
+import img3 from '../../assets/ISG2.webp';
+import img4 from '../../assets/ISG4.webp';
+import img5 from '../../assets/ISG1.webp';
+import img6 from '../../assets/ISG3.webp';
+import img7 from '../../assets/IMG2.webp';
+import img8 from '../../assets/IMG.webp';
 
 const Header = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

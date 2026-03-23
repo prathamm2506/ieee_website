@@ -1,10 +1,194 @@
-/* Add this in your main CSS file */
-.no-scrollbar::-webkit-scrollbar {
-    display: none; /* Hide the scrollbar for Chrome, Safari, and Edge */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap');
+
+.testimonials-section {
+  padding: 100px 0 60px 0;
+  background-color: #ffffff;
+}
+
+.testimonials-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.testimonials-heading {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 80px;
+  color: #1e293b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.testimonial-card {
+  position: relative;
+  /* Reduced top padding to move content up */
+  padding: 50px 25px 35px 25px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  min-height: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-12px);
+}
+
+.card-bg-0 {
+  background: linear-gradient(145deg, #bae6fd 0%, #7dd3fc 100%);
+}
+.card-bg-1 {
+  background: linear-gradient(145deg, #bbf7d0 0%, #86efac 100%);
+}
+.card-bg-2 {
+  background: linear-gradient(145deg, #e9d5ff 0%, #d8b4fe 100%);
+}
+.card-bg-3 {
+  background: linear-gradient(145deg, #fbcfe8 0%, #f9a8d4 100%);
+}
+
+.card-bg-0:hover {
+  box-shadow: 0 20px 40px rgba(56, 189, 248, 0.4); /* Light Blue glow */
+  border-color: rgba(56, 189, 248, 0.6);
+}
+.card-bg-1:hover {
+  box-shadow: 0 20px 40px rgba(74, 222, 128, 0.4); /* Light Green glow */
+  border-color: rgba(74, 222, 128, 0.6);
+}
+.card-bg-2:hover {
+  box-shadow: 0 20px 40px rgba(192, 132, 252, 0.4); /* Light Purple glow */
+  border-color: rgba(192, 132, 252, 0.6);
+}
+.card-bg-3:hover {
+  box-shadow: 0 20px 40px rgba(251, 113, 133, 0.4); /* Light Pink glow */
+  border-color: rgba(251, 113, 133, 0.6);
+}
+
+/* HEADER: Significantly reduced height to close the gap */
+.testimonial-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+  height: 110px;
+  /* Dropped from 145px/160px */
+}
+
+.image-wrapper {
+  position: absolute;
+  top: -50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 5px;
+  background: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.testimonial-card:hover .image-wrapper {
+  transform: scale(1.08) translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.testimonial-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.testimonial-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e293b;
+  text-shadow: none;
+  margin-top: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+}
+
+.testimonial-branch {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.75rem;
+  color: #475569;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+/* BODY: flex-start ensures all paragraphs begin at the same Y-axis */
+.testimonial-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+  width: 100%;
+  /* Removed top padding to pull text up */
+  padding-top: 0;
+}
+
+.quote-mark {
+  font-size: 4rem;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: -15px;
+  left: -10px;
+  font-family: Georgia, serif;
+  transition: color 0.4s ease;
+}
+
+.testimonial-card:hover .quote-mark {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-text {
+  position: relative;
+  z-index: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #334155;
+  text-shadow: none;
+  font-style: italic;
+  margin: 0;
+  width: 100%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px 25px;
   }
-  
-  .no-scrollbar {
-    -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
-    scrollbar-width: none;     /* Hide scrollbar for Firefox */
+}
+
+@media (max-width: 650px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 70px 0;
   }
-  
+
+  .testimonial-header {
+    height: auto;
+    margin-bottom: 15px;
+  }
+}

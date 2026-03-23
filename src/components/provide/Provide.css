@@ -1,23 +1,182 @@
-.provide {
-  max-width: 95%;
-  margin: auto;
-  padding: 16px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap');
+
+/* Container logic */
+.provide-main-wrapper {
+  width: 100%;
+  max-width: 1400px;
+  margin: 80px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
-.provideTitle {
+.provide-title-text {
   text-align: center;
-  font-weight: bold;
-  font-size: xx-large;
-  margin-bottom: 16px;
-  margin-top: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  /* Matched to Testimonials */
+  font-size: 1.8rem;
+  /* Consistent across site */
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #1a1a1a;
 }
 
-.provideContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+/* Grid logic - Forces 4 in a row */
+.provide-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+/* --- THE GLASSMORPHISM BOX FIX --- */
+.provide-grid-container>div {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  padding: 40px 20px !important;
+  /* Reduced top padding to move logo up */
+  min-height: 480px;
+  border-radius: 24px !important;
+
+  /* CRITICAL: Transparency allows the JSX 'bg' prop to be visible */
+  background-color: transparent !important;
+
+  /* The Glass Sheen */
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+
+  /* Blur effect */
+  backdrop-filter: blur(12px) brightness(1.1) saturate(120%);
+  -webkit-backdrop-filter: blur(12px) brightness(1.1) saturate(120%);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+.provide-grid-container>div:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0.45) !important;
+}
+
+.provide-grid-container>div:hover p,
+.provide-grid-container>div:hover .card-content {
+  background: rgba(255, 255, 255, 0.4);
+  border-color: rgba(0, 0, 0, 0.05);
+}
+
+/* --- LOGO & ICON SIZE & ALIGNMENT --- */
+.cardIconWrapper {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  margin: 20px 0 15px 0 !important;
+  z-index: 5;
+}
+
+.provide-grid-container img {
+  display: block !important;
+  margin: 20px auto 15px auto !important;
+  max-height: 120px !important;
+  width: auto !important;
+  filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.3));
+  z-index: 5;
+  transform-origin: center !important;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.4s ease;
+}
+
+.provide-svg-icon {
+  display: inline-block !important;
+  margin: 0 !important; /* Let flex wrapper center it */
+  color: #1e293b;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+  transform-origin: center !important;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.4s ease;
+}
+
+.provide-grid-container > div:hover img,
+.provide-grid-container > div:hover .provide-svg-icon {
+  transform: scale(1.15) !important;
+  filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.5));
+}
+
+/* --- LARGE TITLE STYLING --- */
+.provide-grid-container h3,
+.provide-grid-container .card-title {
+  display: flex !important;
   align-items: center;
-  margin-bottom: 16px;
+  /* Vertically center title in its box */
+  justify-content: center !important;
+  text-align: center !important;
+  width: 100% !important;
+
+  /* THE FIX: Fixed height for titles ensures paragraphs start at the same point */
+  min-height: 70px;
+  margin-top: 25px !important;
+  /* Reduced space between logo and title */
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem !important; /* Increased font size */
+  font-weight: 800 !important;
+  color: #1e293b !important;
+  line-height: 1.2 !important;
+  text-shadow: none !important;
+  letter-spacing: 0.5px;
+  z-index: 5;
+}
+
+/* --- LARGE CONTENT STYLING --- */
+.provide-grid-container p,
+.provide-grid-container .card-content {
+  display: block !important;
+  text-align: center !important;
+  width: 100% !important;
+
+  margin-top: 15px !important;
+  /* Reduced space between title and text */
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  color: #334155 !important;
+  z-index: 5;
+
+  /* Sleek Minimalist Inner Box */
+  background: rgba(255, 255, 255, 0.5);
+  padding: 18px 20px !important;
+  border-radius: 12px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1200px) {
+  .provide-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .provide-grid-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .provide-title-text {
+    font-size: 5rem;
+  }
+
+  .provide-grid-container>div {
+    min-height: auto;
+  }
 }

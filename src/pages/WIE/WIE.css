@@ -1,184 +1,271 @@
-/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+  --wie-purple-deep: #9333ea;
+  --wie-purple-dark: #7e22ce;
+  --wie-lavender: #e9d5ff;
+  --wie-bg-soft: #faf5ff;
+  --white: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .wie-page {
-    color: #333;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+  color: #2d2d2d;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+}
+
+/* --- HERO SECTION --- */
+.wie-hero {
+  position: relative;
+  background: linear-gradient(135deg, var(--wie-purple-deep) 0%, var(--wie-purple-dark) 100%);
+  color: var(--white);
+  padding: 6rem 10% 12rem 10%;
+  clip-path: ellipse(150% 100% at 50% 0%);
+  display: flex;
+  align-items: center;
+  min-height: 85vh;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Absolute Left Alignment */
+  text-align: left;
+  padding: 0;
+}
+
+.hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--white);
+  /* Force alignment: T R B L */
+  margin: 0 0 0.5rem 0;
+}
+
+.hero-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  color: var(--white);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.95;
+  /* Force alignment: T R B L */
+  margin: 0 0 1.5rem 0;
+  display: block;
+}
+
+.hero-desc {
+  font-size: 1.25rem;
+  color: var(--white);
+  max-width: 550px;
+  line-height: 1.6;
+  font-weight: 400;
+  opacity: 0.9;
+  /* Force alignment: T R B L */
+  margin: 0 0 2.5rem 0;
+  display: block;
+}
+
+.wie-button {
+  display: inline-block;
+  padding: 1rem 2.2rem;
+  background-color: var(--white);
+  color: var(--wie-purple-deep);
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-left: 0;
+}
+
+.wie-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Floating Logo */
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+
+.floating-logo {
+  width: 100%;
+  max-width: 350px;
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.4));
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
   }
-  
-  /* Hero Section */
-  .wie-hero {
-    background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
-    color: white;
-    padding: 4rem 2rem;
+
+  50% {
+    transform: translateY(-15px);
   }
-  
-  .hero-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+}
+
+/* --- TEAM SECTION --- */
+.wie-team {
+  padding: 7rem 10%;
+  background: var(--white);
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: var(--wie-purple-deep);
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+}
+
+.team-cards {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+/* --- INFO SECTION --- */
+.wie-info {
+  padding: 7rem 10%;
+  background-color: var(--wie-bg-soft);
+}
+
+.info-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.info-heading h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.6rem;
+  color: var(--wie-purple-deep);
+  font-weight: 600;
+}
+
+.info-item {
+  padding: 2.5rem;
+  background: var(--white);
+  border-radius: 15px;
+  border-left: 8px solid var(--wie-purple-deep);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+.info-item h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--wie-purple-deep);
+  margin-bottom: 1rem;
+}
+
+.info-item p {
+  font-size: 1.15rem;
+  color: #475569;
+}
+
+/* --- FINAL CONTENT SECTION --- */
+.wie-content {
+  padding: 7rem 10%;
+  background: linear-gradient(135deg, var(--wie-purple-deep) 0%, var(--wie-purple-dark) 100%);
+  text-align: center;
+}
+
+.content-container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.final-text {
+  color: var(--white);
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+/* Scroll Arrow Animation */
+.scroll-down-arrow {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+  text-decoration: none;
+  animation: bounce 2s infinite;
+}
+
+.arrow-icon {
+  width: 15px;
+  height: 15px;
+  border-bottom: 3px solid var(--white);
+  border-right: 3px solid var(--white);
+  transform: rotate(45deg);
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(-50%) translateY(0);
   }
-  
-  .hero-left {
-    flex: 1;
-    min-width: 300px;
-    padding: 1rem;
+
+  40% {
+    transform: translateX(-50%) translateY(-10px);
   }
-  
-  .hero-left h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .hero-left h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    font-weight: 400;
-  }
-  
-  .hero-left p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    max-width: 500px;
-  }
-  
-  .hero-right {
-    flex: 1;
-    min-width: 300px;
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-  }
-  
-  .hero-right img {
-    max-width: 100%;
-    height: auto;
-    max-height: 300px;
-  }
-  
-  .wie-button {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background-color: white;
-    color: #6e48aa;
-    border-radius: 50px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-  
-  .wie-button:hover {
-    background-color: #f0f0f0;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Team Section */
-  .wie-team {
-    padding: 4rem 2rem;
-    background-color: #f9f9f9;
-  }
-  
-  .team-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .team-container h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: #6e48aa;
-  }
-  
-  .team-cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-top: 2rem;
-  }
-  
-  /* Info Section */
-  .wie-info {
-    padding: 4rem 2rem;
-    background-color: white;
-  }
-  
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1024px) {
+
+  .hero-container,
   .info-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .info-heading {
-    flex: 1;
-    margin-right: 3rem;
-  }
-  
-  .info-heading h2 {
-    font-size: 3rem;
-    color: #6e48aa;
-  }
-  
-  .info-table {
-    flex: 2;
-    min-width: 300px;
-    padding: 1rem;
-  }
-  
-  .info-item {
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
-  }
-  
-  .info-item:hover {
-    transform: translateY(-5px);
-  }
-  
-  .info-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #6e48aa;
-  }
-  
-  /* Content Section */
-  .wie-content {
-    padding: 4rem 2rem;
-    background-color: #f9f9f9;
-  }
-  
-  .content-container {
-    max-width: 800px;
-    margin: 0 auto;
+    grid-template-columns: 1fr;
+    flex-direction: column;
     text-align: center;
   }
-  
-  .content-container p {
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
+
+  .hero-left {
+    align-items: center;
+    text-align: center;
   }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .hero-container, .info-container {
-      flex-direction: column;
-    }
-    
-    .hero-left, .hero-right, .info-heading, .info-table {
-      width: 100%;
-      text-align: center;
-    }
-    
-    .hero-left p {
-      margin-left: auto;
-      margin-right: auto;
-    }
+
+  .team-cards {
+    flex-direction: column;
+    align-items: center;
   }
+}
