@@ -82,10 +82,10 @@ export default function Footer() {
             <p className="mt-6 flex flex-row items-start text-center justify-center lg:justify-start gap-4 text-[var(--black)]">
               {/* <i className="fa-solid fa-headset text-2xl"></i> */}
               <small
-                href="tel:+919867615388"
+                href="tel:+918450914156"
                 className="hover:text-[var(--color3)]"
               >
-                +91 9867615388 - Gaurang Rane (Chairperson)
+                +91 84509 14156 - Rakshit Sharma (Chairperson)
               </small>
             </p>
           </div>
@@ -103,7 +103,7 @@ export default function Footer() {
                   className="hover:text-[var(--color3)] flex flex-row items-center justify-center lg:justify-start gap-2"
                 >
                   <i className="fa-brands fa-instagram text-xl"></i>
-                  <span className="ml-2 text-base">ieee_vesit</span>
+                  <span className="ml-2 text-base">Instagram</span>
                 </a>
               </li>
               <li>
@@ -114,7 +114,7 @@ export default function Footer() {
                   className="hover:text-[var(--color3)] flex flex-row items-center justify-center lg:justify-start gap-2"
                 >
                   <i className="fa-brands fa-linkedin-in text-xl"></i>
-                  <span className="ml-2 text-base">ieeevesit</span>
+                  <span className="ml-2 text-base">LinkedIn</span>
                 </a>
               </li>
               <li>
@@ -125,7 +125,7 @@ export default function Footer() {
                   className="hover:text-[var(--color3)] flex flex-row items-center justify-center lg:justify-start gap-2"
                 >
                   <i className="fa-brands fa-github text-xl"></i>
-                  <span className="ml-2 text-base">ieee-vesit</span>
+                  <span className="ml-2 text-base">GitHub</span>
                 </a>
               </li>
               <li>
@@ -136,7 +136,7 @@ export default function Footer() {
                   className="hover:text-[var(--color3)] flex flex-row items-center justify-center lg:justify-start gap-2"
                 >
                   <i className="fa-solid fa-at text-xl"></i>
-                  <span className="ml-2 text-base">ieee.vesit@ves.ac.in</span>
+                  <span className="ml-2 text-base">Email</span>
                 </a>
               </li>
             </ul>

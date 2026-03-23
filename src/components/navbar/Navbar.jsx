@@ -139,8 +139,8 @@ const Navbar = () => {
               <ul className={`sub-menu ${activeDropdown === "events" ? "show" : ""}`}>
                 {/* 🔹 Upcoming Event → TPP Workshop */}
                 <li>
-                  <Link to="/tpp-workshop" onClick={closeSidebar} className="uppercase">
-                    Upcoming (TPP Workshop)
+                  <Link to="/machine_minds" onClick={closeSidebar} className="uppercase">
+                    Upcoming (Machine Minds)
                   </Link>
                 </li>
 
@@ -170,7 +170,7 @@ const Navbar = () => {
             </li> */}
             <li className="bg-[color:--color3] hover:!bg-[color:--white] duration-500">
               <a
-                href="https://arcane.ieeevesit.org/" // replace with your actual Google Form link
+                href="https://forms.gle/gPrA2sc8sUVoVxbY8" // replace with your actual Google Form link
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={closeSidebar}

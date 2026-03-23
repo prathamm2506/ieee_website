@@ -5,7 +5,13 @@ const Card = ({ name, role, image, instagram, linkedin, github, email }) => {
   return (
     <div className="card">
       <div className="card-image">
-        <img src={image} alt={name} />
+       <img
+  src={image}
+  alt={name}
+  loading="lazy"
+  decoding="async"
+  className="w-full h-full object-cover"
+/>
       </div>
       <div className="card-content">
         <div className="hover-box">

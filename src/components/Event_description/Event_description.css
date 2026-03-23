@@ -1,29 +1,109 @@
-.event{
-    justify-items:center;
-    text-align:center;
+.event-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 20px;
+    background: #ffffff;
 }
 
-.heada{
-    font-size:var(--h1);
+/* Main Card */
+
+.event-card {
+    max-width: 900px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+    transition: all 0.35s ease;
 }
 
-.headb{
-    font-size:var(--h3);
+.event-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
 }
 
-.headc{
-    font-size:var(--p);
+/* Header */
+
+.event-header {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.img{
-    align-items:center;
-    padding-top:20px;
-    justify-content:center;
-    margin:1rem 0;
+.event-title {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
 }
 
-.para1{
-    font-size:var(--p);
-    padding-top: 20px;
+.event-subtitle {
+    font-size: 1.3rem;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.event-date {
+    font-size: 0.95rem;
+    color: #777;
+}
+
+/* Image */
+
+.event-image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.event-image {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.35s ease;
+}
+
+.event-image:hover {
+    transform: scale(1.02);
+}
+
+/* Description */
+
+.event-description {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #333;
     text-align: justify;
+}
+
+/* Button */
+
+.event-button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.register-btn {
+    padding: 14px 36px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }

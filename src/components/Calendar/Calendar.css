@@ -1,133 +1,623 @@
-.calendar {
-  margin: 100px auto;
-  width: 95%;
-  /* max-width: 1259px; */
-  padding: 1rem;
+/* Calendar.css — matches site-wide design system */
+/* Font is imported globally via index.css (Poppins) */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.calendar-grid {
+/* ── Root wrapper ── */
+.ec-root {
+  font-family: var(--poppins, "Poppins", serif);
+  background: transparent;
+  min-height: 100vh;
+  padding: 64px 24px 100px;
+}
+
+.ec-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* ── Header ── */
+.ec-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.ec-eyebrow {
+  font-size: var(--small, 0.875rem);
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color4, #4a628a);
+  margin-bottom: 6px;
+  font-family: var(--poppins, "Poppins", serif);
+}
+
+.ec-title {
+  font-family: var(--poppins, "Poppins", serif);
+  font-size: var(--h2, clamp(2rem, 4vw, 3rem));
+  color: var(--black, #000);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.ec-title em {
+  font-style: italic;
+  color: var(--color3, #7ab2d3);
+}
+
+.ec-header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* ── Stats pill ── */
+.ec-stat-pill {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  background: var(--color2, #b9e5e8);
+  color: var(--black, #000);
+  padding: 10px 18px;
+  border-radius: 100px;
+  font-family: var(--poppins, "Poppins", serif);
+}
+
+.ec-stat-num {
+  font-family: var(--poppins, "Poppins", serif);
+  font-size: var(--h3, clamp(1.5rem, 3vw, 1.9rem));
+  font-weight: 700;
+  color: var(--color4, #4a628a);
+  line-height: 1;
+}
+
+.ec-stat-label {
+  font-size: var(--small, clamp(0.875rem, 2vw, 1rem));
+  font-weight: 400;
+  color: var(--black, #000);
+}
+
+/* ── Filters ── */
+.ec-filters {
+  display: flex;
+  gap: 10px;
+}
+
+.ec-select-wrap {
+  position: relative;
+}
+
+.ec-select-wrap::after {
+  content: '▾';
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10px;
+  color: var(--color4, #4a628a);
+  pointer-events: none;
+}
+
+.ec-select {
+  appearance: none;
+  -webkit-appearance: none;
+  background: var(--white, #fff);
+  color: var(--black, #000);
+  border: 1.5px solid var(--color3, #7ab2d3);
+  border-radius: 8px;
+  padding: 10px 34px 10px 14px;
+  font-family: var(--poppins, "Poppins", serif);
+  font-size: var(--small, clamp(0.875rem, 2vw, 1rem));
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.ec-select:hover,
+.ec-select:focus {
+  border-color: var(--color4, #4a628a);
+}
+
+/* ── Month label ── */
+.ec-month-label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.ec-month-name {
+  font-family: var(--poppins, "Poppins", serif);
+  font-size: var(--h3, clamp(1.5rem, 3vw, 1.9rem));
+  font-weight: 600;
+  color: var(--black, #000);
+}
+
+.ec-month-count {
+  font-size: var(--small, clamp(0.875rem, 2vw, 1rem));
+  font-weight: 500;
+  color: var(--black, #000);
+  background: var(--color2, #b9e5e8);
+  padding: 3px 12px;
+  border-radius: 100px;
+  font-family: var(--poppins, "Poppins", serif);
+}
+
+.ec-month-line {
+  flex: 1;
+  height: 1px;
+  background: var(--color2, #b9e5e8);
+}
+
+/* ── Layout ── */
+.ec-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
-  width: 100%;
+  grid-template-columns: 1fr 300px;
+  gap: 28px;
+  align-items: start;
 }
 
-.day {
-  border-top: 3px solid var(--black);
-  text-align: center;
-  padding: 15px;
-  background: var(--white);
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  width: 100%;
-  min-height: 350px;
+/* ── Tags ── */
+.ec-tag {
+  display: inline-block;
+  font-family: var(--poppins, "Poppins", serif);
+  font-size: var(--small, clamp(0.875rem, 2vw, 1rem));
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 12px;
+  border-radius: 100px;
+  color: var(--black, #000);
+}
+
+.tag-workshop {
+  background: var(--junior-council, #d0f4de);
+}
+
+.tag-competition {
+  background: var(--se, #fcd5d2);
+}
+
+.tag-talk {
+  background: var(--yellow, #fff4ac);
+}
+
+.tag-hackathon {
+  background: var(--faculty, #a8b2ff);
+}
+
+/* ── Event cards ── */
+.ec-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ec-card {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: var(--white, #fff);
+  border: 1px solid var(--color2, #b9e5e8);
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.ec-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+  border-color: var(--color3, #7ab2d3);
+}
+
+.ec-card-date {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  font-size: var(--p);
-  color: var(--black);
-  border-radius: 10px;
+  justify-content: center;
+  padding: 24px 26px;
+  background: var(--color1, #dff2eb);
+  border-right: 1px solid var(--color2, #b9e5e8);
+  min-width: 90px;
+  flex-shrink: 0;
 }
 
-.day hr{
-  border-top: 1.5px solid var(--black);
+.ec-card-day {
+  font-family: var(--poppins, "Poppins", serif);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--color4, #4a628a);
+  line-height: 1;
 }
 
-.day.highlight {
-  border-top: 3px solid var(--color4);
+.ec-card-mon {
+  font-size: var(--small, clamp(0.875rem, 2vw, 1rem));
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--color3, #7ab2d3);
+  margin-top: 4px;
+  text-transform: uppercase;
+  font-family: var(--poppins, "Poppins", serif);
 }
 
-.day.highlight hr{
-  border-top: 1.5px solid var(--color4);
+.ec-card-body {
+  flex: 1;
+  padding: 20px 24px;
 }
 
-.day.highlight span {
-  color: var(--color4);
+.ec-card-title {
+  font-family: var(--poppins, "Poppins", serif);
+  font-size: var(--p, clamp(1rem, 2.5vw, 1.2rem));
+  font-weight: 600;
+  color: var(--black, #000);
+  margin: 8px 0 6px;
+  line-height: 1.2;
 }
 
-.date {
-  font-size: var(--h2);
+.ec-card-time {
+  font-size: var(--small, clamp(0.875rem, 2vw, 1rem));
+  color: var(--color4, #4a628a);
+  font-family: var(--poppins, "Poppins", serif);
+}
+
+.ec-card-arrow {
+  padding: 0 24px;
+  font-size: 1.1rem;
+  color: var(--color2, #b9e5e8);
+  flex-shrink: 0;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.ec-card:hover .ec-card-arrow {
+  color: var(--color3, #7ab2d3);
+  transform: translateX(3px);
+}
+
+/* ── Sidebar ── */
+.ec-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ec-sidebar-heading {
+  font-family: var(--poppins, "Poppins", serif);
+  font-size: var(--small, clamp(0.875rem, 2vw, 1rem));
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color4, #4a628a);
+  margin-bottom: 10px;
+}
+
+.ec-sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  padding: 12px 14px;
+  background: var(--white, #fff);
+  border: 1px solid var(--color2, #b9e5e8);
+  border-radius: 12px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.ec-sidebar-item:hover {
+  transform: translateX(3px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  border-color: var(--color3, #7ab2d3);
+}
+
+.ec-sb-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color1, #dff2eb);
+  border-radius: 8px;
+  padding: 6px 10px;
+  min-width: 44px;
+}
+
+.ec-sb-day {
+  font-family: var(--poppins, "Poppins", serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color4, #4a628a);
+  line-height: 1;
+}
+
+.ec-sb-mon {
+  font-size: var(--small, clamp(0.875rem, 2vw, 1rem));
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color3, #7ab2d3);
+  margin-top: 1px;
+  font-family: var(--poppins, "Poppins", serif);
+}
+
+.ec-sb-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.ec-sb-title {
+  font-family: var(--poppins, "Poppins", serif);
+  font-size: var(--small, clamp(0.875rem, 2vw, 1rem));
+  font-weight: 500;
+  color: var(--black, #000);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ec-sb-time {
+  font-family: var(--poppins, "Poppins", serif);
+  font-size: var(--small, clamp(0.875rem, 2vw, 1rem));
+  color: var(--color4, #4a628a);
+  margin-top: 2px;
+}
+
+.ec-sb-none {
+  font-family: var(--poppins, "Poppins", serif);
+  font-size: var(--small, clamp(0.875rem, 2vw, 1rem));
+  color: var(--color4, #4a628a);
+  font-style: italic;
+}
+
+/* ── Year at a glance (sidebar bar chart) ── */
+.ec-year-strip {
+  background: var(--white, #fff);
+  border: 1px solid var(--color2, #b9e5e8);
+  border-radius: 12px;
+  padding: 18px 16px;
+}
+
+.ec-strip-row {
+  display: grid;
+  grid-template-columns: 30px 1fr 16px;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.15s ease;
+}
+
+.ec-strip-row:hover:not(.empty) {
+  background: rgba(122, 178, 211, 0.1);
+}
+
+.ec-strip-row.active .ec-strip-month {
+  color: var(--color4, #4a628a);
+  font-weight: 600;
+}
+
+.ec-strip-row.empty {
+  cursor: default;
+  opacity: 0.4;
+}
+
+.ec-strip-month {
+  font-family: var(--poppins, "Poppins", serif);
+  font-size: var(--small, clamp(0.875rem, 2vw, 1rem));
+  font-weight: 400;
+  color: var(--black, #000);
+}
+
+.ec-strip-bar-wrap {
+  height: 5px;
+  background: var(--color1, #dff2eb);
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.ec-strip-bar {
+  height: 100%;
+  background: var(--color3, #7ab2d3);
+  border-radius: 100px;
+  max-width: 100%;
+  transition: width 0.3s ease;
+}
+
+.ec-strip-row.active .ec-strip-bar {
+  background: var(--color4, #4a628a);
+}
+
+.ec-strip-count {
+  font-family: var(--poppins, "Poppins", serif);
+  font-size: var(--small, clamp(0.875rem, 2vw, 1rem));
+  color: var(--black, #000);
+  text-align: right;
+}
+
+/* ── Empty state ── */
+.ec-empty-state {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.ec-empty-hero {
+  text-align: center;
+  padding: 40px 24px 0;
+  color: var(--color4, #4a628a);
+}
+
+.ec-empty-icon {
+  font-size: 2.5rem;
+  margin-bottom: 14px;
+  opacity: 0.55;
+}
+
+.ec-empty-hero strong {
+  display: block;
+  font-family: var(--poppins, "Poppins", serif);
+  font-size: var(--h3, clamp(1.5rem, 3vw, 1.9rem));
+  font-weight: 700;
+  color: var(--black, #000);
   margin-bottom: 8px;
 }
 
-.event {
-  margin-top: 5px;
-  color: var(--black);
-  padding: 5px;
+.ec-empty-hero p {
+  font-family: var(--poppins, "Poppins", serif);
+  font-size: var(--p, clamp(1rem, 2.5vw, 1.2rem));
+  color: var(--color4, #4a628a);
 }
 
-.event-time {
-  color: var(--black);
-  font-size: var(--small);
+/* ── Suggest grid (empty state month cards) ── */
+.ec-suggest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
 }
 
-.event-title {
-  font-size: var(--p) !important;
+.ec-suggest-month {
+  background: var(--white, #fff);
+  border: 1px solid var(--color2, #b9e5e8);
+  border-radius: 12px;
+  padding: 20px 20px 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.day-of-week {
-  font-size: var(--p);
+.ec-suggest-month::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--color3, #7ab2d3);
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
 
-.day-content hr {
-  height: 4px;
-  margin: 8px 0;
+.ec-suggest-month:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+  border-color: var(--color3, #7ab2d3);
 }
 
-@media (max-width: 1024px) {
-  .calendar {
-    margin: 80px auto;
-    padding: 15px;
-  }
-  
-  .day {
-    min-height: 300px;
-    padding: 12px;
-  }
+.ec-suggest-month:hover::before {
+  opacity: 1;
 }
 
-@media (max-width: 768px) {
-  .calendar {
-    margin: 60px auto;
-    padding: 10px;
-  }
-  
-  .calendar-grid {
-    gap: 10px;
-  }
-  
-  .day {
-    min-height: 280px;
-  }
+.ec-suggest-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
 }
 
-@media (max-width: 480px) {
-  .calendar {
-    margin: 40px auto;
-    padding: 10px;
-  }
-  
-  .calendar-grid {
+.ec-suggest-name {
+  font-family: var(--poppins, "Poppins", serif);
+  font-size: var(--p, clamp(1rem, 2.5vw, 1.2rem));
+  font-weight: 600;
+  color: var(--black, #000);
+}
+
+.ec-suggest-badge {
+  font-family: var(--poppins, "Poppins", serif);
+  font-size: var(--small, clamp(0.875rem, 2vw, 1rem));
+  font-weight: 600;
+  background: var(--color1, #dff2eb);
+  color: var(--color4, #4a628a);
+  border: 1px solid var(--color2, #b9e5e8);
+  padding: 3px 10px;
+  border-radius: 100px;
+}
+
+.ec-suggest-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.ec-suggest-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.ec-suggest-day {
+  font-family: var(--poppins, "Poppins", serif);
+  font-size: var(--p, clamp(1rem, 2.5vw, 1.2rem));
+  font-weight: 700;
+  color: var(--color3, #7ab2d3);
+  min-width: 24px;
+  flex-shrink: 0;
+}
+
+.ec-suggest-title {
+  font-family: var(--poppins, "Poppins", serif);
+  font-size: var(--small, clamp(0.875rem, 2vw, 1rem));
+  color: var(--black, #000);
+  line-height: 1.3;
+}
+
+.ec-suggest-cta {
+  font-family: var(--poppins, "Poppins", serif);
+  font-size: var(--small, clamp(0.875rem, 2vw, 1rem));
+  font-weight: 600;
+  color: var(--color4, #4a628a);
+  letter-spacing: 0.04em;
+  padding-top: 12px;
+  border-top: 1px solid var(--color2, #b9e5e8);
+}
+
+/* ── Responsive ── */
+@media (max-width: 820px) {
+  .ec-layout {
     grid-template-columns: 1fr;
   }
-  
-  .day {
-    min-height: auto;
-    padding: 20px 15px;
+
+  .ec-sidebar {
+    order: -1;
+  }
+
+  .ec-year-strip {
+    display: none;
   }
 }
 
-.month-nav-btn {
-  background-color: var(--white);
-  border: 1px solid var(--black);
-  padding: 5px 12px;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
+@media (max-width: 600px) {
+  .ec-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-.month-nav-btn:hover {
-  background-color: var(--black);
-  color: var(--white);
+  .ec-header-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .ec-card-date {
+    padding: 18px 18px;
+    min-width: 72px;
+  }
+
+  .ec-card-day {
+    font-size: 1.8rem;
+  }
 }

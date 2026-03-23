@@ -67,7 +67,7 @@ function App() {
         <Route path="/crypto_chrome" element={<CryptoChrome />} />
         <Route path="/flutter" element={<Flutter />} />
         <Route path="/hpomen" element={<HpOmen />} />
-        <Route path="/machine_minds" element={<MachineMinds />} />
+       
         <Route path="/nexiot" element={<NexIoT />} />
         <Route path="/paperquest" element={<PaperQuest />} />
         <Route path="/uiux" element={<UIUX />} />
@@ -79,6 +79,7 @@ function App() {
         <Route path="/uiux25" element={<UIUXWorkshop />} />
         <Route path="/pcb" element={<PCB />} />
         <Route path="/tpp-workshop" element={<TPPWorkshop/>} />
+         <Route path="/machine_minds" element={<MachineMinds />} />
 
       </Routes>
       <Footer />

@@ -1,6 +1,6 @@
 import React from 'react';
 import EventDescription from '../../components/Event_description/EventDescription';
-import machineMindsImage from '../../assets/Machineminds.webp';
+import machineMindsImage from '../../assets/newmachineminds.png';
 import { useNavigate } from 'react-router-dom';
 
 const MachineMinds = () => {
@@ -15,7 +15,7 @@ const MachineMinds = () => {
       <EventDescription 
         title="Machine Minds"
         subtitle="Exploring AI & ML Fundamentals"
-        date="Two-Day Workshop"
+        date="Date:- 23rd & 24th March 2026"
         image={machineMindsImage}
         description="IEEE-VESIT hosted Machine Minds, a hands-on AI and ML workshop introducing students to key concepts and real-world applications. Day one covered the fundamentals, including supervised and unsupervised learning, data preprocessing, and feature engineering using Pandas and NumPy. 
 
