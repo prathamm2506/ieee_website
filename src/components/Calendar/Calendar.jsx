@@ -28,7 +28,11 @@ const events = [
     { day: 17, month: 7, year: 2025, title: "BUILD.PCB Day 1", time: "2:30 PM", link: "/pcb",tag:"Workshop" },
     { day: 18, month: 7, year: 2025, title: "BUILD.PCB Day 2", time: "2:30 PM", link: "/pcb" ,tag:"Workshop "},
     { day: 31, month: 7, year: 2025, title: "UI/UX Workshop Day 1", time: "2:30 PM", link: "/uiux25",tag:"Workshop" },
-    { day: 1, month: 8, year: 2025, title: "UI/UX Workshop Day 2", time: "2:30 PM", link: "/uiux25",tag:"Workshop" }
+    { day: 1, month: 8, year: 2025, title: "UI/UX Workshop Day 2", time: "2:30 PM", link: "/uiux25",tag:"Workshop" },
+    { day: 23, month: 3, year: 2026, title: "Machine Minds Day 1", time: "2:30 PM", link: "/machine_minds",tag:"Workshop" },
+    { day: 24, month: 3, year: 2026, title: "Machine Minds Day 2", time: "2:30 PM", link: "/machine_minds",tag:"Workshop" },
+    { day: 13, month: 2, year: 2026, title: "Capture the Flag", time: "12:30 PM", link: "/CTF",tag:"Workshop" },
+    { day: 4, month: 1, year: 2026, title: "Arcane Hackathon", time: "24 Hrs Online", link: "/Arcane",tag:"Workshop" }
   
 ];
 
@@ -46,8 +50,7 @@ const tagColors = {
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
-const now = new Date();
-const STORAGE_KEY = "ec_last_view";
+
 
 /**
  * Read the last saved month/year from localStorage.
@@ -65,28 +68,28 @@ function getInitialView() {
   } catch (_) {
     // ignore parse errors
   }
-  // Default: current month & year
+   // ✅ Default to current date
   return { month: now.getMonth() + 1, year: now.getFullYear() };
 }
 
 // ── Component ─────────────────────────────────────────────────────────────────
 
 const Calendar = () => {
-  const initial = getInitialView();
-  const [selectedMonth, setSelectedMonth] = useState(initial.month);
-  const [selectedYear, setSelectedYear] = useState(initial.year);
+  const now = new Date();
 
+const [selectedMonth, setSelectedMonth] = useState(now.getMonth() + 1);
+const [selectedYear, setSelectedYear] = useState(now.getFullYear());
   const years = [...new Set(events.map((e) => e.year))].sort();
 
   // Persist selection whenever it changes
   const changeMonth = (month) => {
     setSelectedMonth(month);
-    localStorage.setItem(STORAGE_KEY, JSON.stringify({ month, year: selectedYear }));
+   
   };
 
   const changeYear = (year) => {
     setSelectedYear(year);
-    localStorage.setItem(STORAGE_KEY, JSON.stringify({ month: selectedMonth, year }));
+   
   };
 
   const filteredEvents = events.filter(

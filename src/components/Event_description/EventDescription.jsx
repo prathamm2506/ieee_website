@@ -1,25 +1,21 @@
 import React, { useState, useEffect } from "react";
 
+
 const EventDescription = ({
   title,
   subtitle,
   date,
   image,
   description,
-  linkform
+  linkform,
+  galleryImages   // 🔥 NEW PROP
 }) => {
 
   const [loading, setLoading] = useState(true);
 
   // 🔥 SAMPLE GALLERY IMAGES
-  const gallery = [
-    "https://images.unsplash.com/photo-1523580494863-6f3031224c94",
-    "https://images.unsplash.com/photo-1511578314322-379afb476865",
-    "https://images.unsplash.com/photo-1505373877841-8d25f7d46678",
-    "https://images.unsplash.com/photo-1492684223066-81342ee5ff30",
-    "https://images.unsplash.com/photo-1531058020387-3be344556be6",
-    "https://images.unsplash.com/photo-1503428593586-e225b39bddfe"
-  ];
+ const gallery = galleryImages || [];
+
 
   // 🔥 PRELOAD ALL IMAGES
   useEffect(() => {
@@ -109,7 +105,7 @@ const EventDescription = ({
           </button>
         </div>
 
-        {/* Gallery
+        {/* Gallery */}
         <div className="mt-6">
           <h2 className="text-2xl font-semibold text-center mb-8 text-gray-800">
             Event Highlights 
@@ -129,7 +125,7 @@ const EventDescription = ({
               </div>
             ))}
           </div>
-        </div> */}
+        </div>
 
       </div>
     </div>

@@ -39,6 +39,8 @@ import MongoInit from './pages/workshops/Mongo.jsx';
 import UIUXWorkshop from './pages/workshops/uiux_25.jsx';
 import PCB from './pages/workshops/pcb.jsx';
 import TPPWorkshop from './pages/workshops/Tpp_25.jsx';
+import Arcane from './pages/workshops/Arcane.jsx';
+import CTF from './pages/workshops/CTF.jsx';
 
 function App() {
   return (
@@ -80,6 +82,8 @@ function App() {
         <Route path="/pcb" element={<PCB />} />
         <Route path="/tpp-workshop" element={<TPPWorkshop/>} />
          <Route path="/machine_minds" element={<MachineMinds />} />
+         <Route path="/CTF" element={<CTF />} />
+         <Route path="/Arcane" element={<Arcane />} />
 
       </Routes>
       <Footer />
