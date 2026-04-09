@@ -6,7 +6,7 @@ import Image01 from '../../assets/arc01.png';
 import Image02 from '../../assets/arc02.png';
 import Image03 from '../../assets/arc03.png';
 import Image04 from '../../assets/arc04.png';
-import Image05 from '../../assets/arc05.PNG';
+import Image05 from '../../assets/arc05.jpg';
 import Image06 from '../../assets/arc06.png';
 
 const Arcane = () => {
