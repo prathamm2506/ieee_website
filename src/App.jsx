@@ -41,6 +41,7 @@ import PCB from './pages/workshops/pcb.jsx';
 import TPPWorkshop from './pages/workshops/Tpp_25.jsx';
 import Arcane from './pages/workshops/Arcane.jsx';
 import CTF from './pages/workshops/CTF.jsx';
+import Symp2 from './pages/workshops/Sympo2.jsx';
 
 function App() {
   return (
@@ -84,6 +85,8 @@ function App() {
          <Route path="/machine_minds" element={<MachineMinds />} />
          <Route path="/CTF" element={<CTF />} />
          <Route path="/Arcane" element={<Arcane />} />
+         <Route path="/symp2" element={<Symp2 />} />
+
 
       </Routes>
       <Footer />

@@ -108,7 +108,7 @@ const EventDescription = ({
         {/* Gallery */}
         <div className="mt-6">
           <h2 className="text-2xl font-semibold text-center mb-8 text-gray-800">
-            Event Highlights 
+            {/* Event Highlights  */}
           </h2>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-5">

@@ -116,12 +116,12 @@ const Header = () => {
       type: "NATURE",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
     },
-    {
-      img: "/ISG4.webp",
-      title: "MAGIC SLIDER",
-      type: "NATURE",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
-    },
+    // {
+    //   img: "/ISG4.webp",
+    //   title: "MAGIC SLIDER",
+    //   type: "NATURE",
+    //   description: "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+    // },
     {
       img: "/ISG1.webp",
       title: "MAGIC SLIDER",
@@ -140,12 +140,12 @@ const Header = () => {
       type: "PLANT",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
     },
-    {
-      img: "/IMG.webp",
-      title: "MAGIC SLIDER",
-      type: "PLANT",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
-    },
+    // {
+    //   img: "/IMG.webp",
+    //   title: "MAGIC SLIDER",
+    //   type: "PLANT",
+    //   description: "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+    // },
   ];
 
   const moveSlider = (direction) => {
