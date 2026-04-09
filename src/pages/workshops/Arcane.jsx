@@ -6,8 +6,8 @@ import Image01 from '../../assets/arc01.png';
 import Image02 from '../../assets/arc02.png';
 import Image03 from '../../assets/arc03.png';
 import Image04 from '../../assets/arc04.png';
-import Image05 from '../../assets/arc05.jpg';
-import Image06 from '../../assets/arc06.png';
+import Image077 from '../../assets/arc05.jpg';
+import Image066 from '../../assets/arc06.jpg';
 
 const Arcane = () => {
   const navigate = useNavigate();
@@ -27,7 +27,7 @@ const Arcane = () => {
         
         Mentors: Ms. Sneha Sumbe (Software Engineer @Equifax ), Mr. Jatin Geogia (Software Engineer @Barclays),  Mr. Mohit Singh Adhikari (Data Scientist II Maps, Location Intelligence & AI HERE Technologies)
 Judges: Ms. Madhumita Menon (ECI System Engineer at Jaguar Land Rover (UK)), Mr. Shashank Aghnihotri (PhD Candidate, Chair for Machine Learning, University of Mannheim)"
-galleryImages={[Image01, Image02, Image03, Image04, Image05, Image06]} 
+galleryImages={[Image01, Image02, Image03, Image04, Image077, Image066]} 
       />
     </div>
   );
