@@ -82,10 +82,10 @@ export default function Footer() {
             <p className="mt-6 flex flex-row items-start text-center justify-center lg:justify-start gap-4 text-[var(--black)]">
               {/* <i className="fa-solid fa-headset text-2xl"></i> */}
               <small
-                href="tel:+918450914156"
+                href="tel:+918591576812"
                 className="hover:text-[var(--color3)]"
               >
-                +91 84509 14156 - Rakshit Sharma (Chairperson)
+                +91 85915 76812 - Aditi Ekawade (Secretary)
               </small>
             </p>
           </div>
