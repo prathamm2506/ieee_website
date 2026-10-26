@@ -97,6 +97,7 @@ const Navbar = () => {
               <a href="#" onClick={() => toggleDropdown("council")}>COUNCIL</a>
               <i className={`bx bxs-chevron-down arrow ${activeDropdown === "council" ? "rotate" : ""}`}></i>
               <ul className={`sub-menu ${activeDropdown === "council" ? "show" : ""}`}>
+                <Link to="/council26-27" onClick={closeSidebar}><li><a href="#" className="uppercase">Year (26-27)</a></li></Link>
                 <Link to="/current_council" onClick={closeSidebar}><li><a href="#" className="uppercase">Year (25-26)</a></li></Link>
                 <Link to='/PreviousCouncil2425' onClick={closeSidebar}><li><a href="#" className="uppercase">Year (24-25)</a></li></Link>
                 <Link to="/previousCouncil" onClick={closeSidebar}><li><a href="#" className="uppercase">Year (23-24)</a></li></Link>
