@@ -17,11 +17,29 @@ import adil from "../assets/SE25/Adil.webp"
 import harshP from "../assets/SE25/Harsh Patange .webp"
 import james from "../assets/SE25/James Lijo.webp"
 import fahad from "../assets/SE25/Fahad bhati.webp"
+import vansh from "../assets/Council2627/Vansh.webp"
+import gayatri from "../assets/Council2627/Gayatri.webp"
 
 const Developers = () => {
   return (
     <div className="mt-24">
-      <h2 className="text-center uppercase">Minds Behind the Code</h2>
+      <h2 className="text-center uppercase">Present Developers</h2>
+      <div className="w-full mx-auto px-4 flex flex-col items-center my-8">
+        <div className="w-full flex flex-row flex-wrap justify-center items-center gap-8">
+          <Card
+            name="Vansh Lalwani"
+            role="Senior Tech Head"
+            image={vansh}
+          />
+          <Card
+            name="Gayatri Bajaj"
+            role="Senior Tech Head"
+            image={gayatri}
+          />
+        </div>
+      </div>
+
+      <h2 className="text-center uppercase mt-16">Minds Behind the Code</h2>
       <div>
             <div className="w-full mx-auto px-4 flex flex-col items-center my-8">
           {/* <h3 className="uppercase my-8">council for AY 23 - 34</h3> */}

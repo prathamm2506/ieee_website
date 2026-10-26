@@ -3,10 +3,8 @@ import emailjs from "emailjs-com";
 import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 import greshaMam from "../../assets/faculty/Gresha ma'am.webp";
 import ashwiniMam from "../../assets/faculty/Ashwini ma'am.webp";
-import rakshit from "../../assets/rakshit.webp";
-import ayush from "../../assets/ayush.webp";
-import shreshtha from "../../assets/shreshtha.webp";
-import Nidhi from "../../assets/Nidhi.webp";
+import aditi from "../../assets/aditi.webp";
+import akash from "../../assets/akash.webp";
 
 const teamMembers = [
   {
@@ -26,39 +24,16 @@ const teamMembers = [
     color: "var(--light-blue)",
   },
   {
-    name: "Rakshit Sharma",
-    role: "Chairperson",
-    email: "2022.rakshit.sharma@ves.ac.in",
-    linkedin: "https://www.linkedin.com/in/rakshit-kumar-sharma-5b25942ab/",
-    github: "https://github.com/Rakshit5467",
-    img: rakshit,
-    color: "var(--light-blue)",
-  },
-  {
-    name: "Ayush Patil",
-    role: "Chief Executive Officer",
-    email: "2022.ayush.patil@ves.ac.in",
-    linkedin: "https://www.linkedin.com/in/ayush-patil-977a3134b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    img: ayush,
-    color: "var(--color1)",
-  },
-  {
-    name: "Shreshtha Kadam",
+    name: "Aditi Ekawade",
     role: "Secretary",
-    email: "d2023.shreshtha.kadam@ves.ac.in",
-    linkedin: "https://www.linkedin.com/in/shreshtha-kadam-a68052233/",
-    github: "https://github.com/Shreshtha0519",
-    img: shreshtha,
-    color: "var(--color1)",
+    img: aditi,
+    color: "var(--light-blue)",
   },
   {
-    name: "Nidhi Bamhane",
-    role: "Managing Executive Officer",
-    email: "2023.nidhi.bamhane@ves.ac.in",
-    linkedin: "https://www.linkedin.com/in/nidhi-bamhane-13a5b72b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    github: "https://github.com/Nidhi2455",
-    img: Nidhi,
-    color: "var(--light-blue)",
+    name: "Akash Murthy",
+    role: "Senior Operations Head",
+    img: akash,
+    color: "var(--color1)",
   },
 ];
 
@@ -325,15 +300,17 @@ export default function Forms() {
 
                   {/* Social Links */}
                   <div className="mt-auto flex justify-center gap-3 w-full">
-                    <a
-                      href={`mailto:${member.email}`}
-                      target="_blank" rel="noopener noreferrer"
-                      className="w-10 h-10 rounded-full bg-white flex items-center justify-center custom-shadow hover:-translate-y-1 transition-transform duration-300"
-                      style={{ color: "var(--color4)" }}
-                      title="Email"
-                    >
-                      <FaEnvelope size={14} />
-                    </a>
+                    {member.email && (
+                      <a
+                        href={`mailto:${member.email}`}
+                        target="_blank" rel="noopener noreferrer"
+                        className="w-10 h-10 rounded-full bg-white flex items-center justify-center custom-shadow hover:-translate-y-1 transition-transform duration-300"
+                        style={{ color: "var(--color4)" }}
+                        title="Email"
+                      >
+                        <FaEnvelope size={14} />
+                      </a>
+                    )}
                     {member.linkedin && (
                       <a
                         href={member.linkedin}

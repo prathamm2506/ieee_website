@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import CurrentCouncil from "./pages/CurrentCouncil";
+import CurrentCouncil2627 from "./pages/CurrentCouncil2627";
 import Events from "./pages/Events";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
@@ -50,6 +51,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/council26-27" element={<CurrentCouncil2627 />} />
         <Route path="/current_council" element={<CurrentCouncil />} />
         <Route path="/council23-24" element={<PrevCouncil1 />} />
         <Route path="/developers" element={<Developers />} />
