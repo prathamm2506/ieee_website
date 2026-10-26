@@ -3,8 +3,7 @@ import Card from "../../components/Card/Card";
 import "./WIE.css";
 
 import logo from "../../assets/Golden_Logo.webp";
-import anshi from "../../assets/TEs/Anshi.webp";
-import vedika from "../../assets/BE25/Vedika.webp";
+import varnika from "../../assets/BE25/Varnika.webp";
 
 const Wie = () => {
   const wieInfo = [
@@ -59,20 +58,9 @@ const Wie = () => {
           <h2 className="section-title">Meet Our Team</h2>
           <div className="team-cards">
             <Card
-              name="Anshi Tiwari"
+              name="Varnika Chaurasia"
               role="Women in Engineering"
-              image={anshi}
-              email="2022.anshi.tiwari@ves.ac.in"
-              github="https://github.com/anshi1108"
-              linkedin="https://www.linkedin.com/in/anshi-tiwari-b4a6642a7/"
-            />
-            <Card
-              name="Vedika Parab"
-              role="Jr. Women In Engineering"
-              image={vedika}
-              email="2023.vedika.parab@ves.ac.in"
-              github="https://github.com/VedikaParab"
-              linkedin="http://linkedin.com/in/vedika-parab"
+              image={varnika}
             />
           </div>
         </div>
